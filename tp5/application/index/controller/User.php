@@ -9,9 +9,18 @@
 namespace app\index\controller;
 
 use app\index\model\User as UserModel;
+use think\Controller;
 
-class User
+class User extends Controller
 {
+    // 获取用户数据列表并输出
+    public function index()
+    {
+        $list = UserModel::all();
+        $this->assign('list', $list);
+        $this->assign('count', count($list));
+        return $this->fetch();
+    }
     // 新增用户数据
     public function add()
     {
@@ -41,7 +50,7 @@ class User
     }
 
     // 读取用户数据
-    public function read($id = '')
+    public function read1($id = '')
     {
         $user = UserModel::get($id);
         echo $user->nickname . '<br/>';
@@ -56,6 +65,12 @@ class User
         echo $user->nickname . '<br/>';
         echo $user->email . '<br/>';
         echo date('Y/m/d', $user->birthday) . '<br/>';
+    }
+
+    public function read($id='')
+    {
+        $list = UserModel::all();
+        return view('read',['list'=>$list]);
     }
     // 获取用户数据列表
     public function all()
