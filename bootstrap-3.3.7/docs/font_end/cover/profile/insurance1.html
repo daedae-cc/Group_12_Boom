@@ -28,21 +28,27 @@
 <body>
 
 <div class="wrapper">
-  <div class="sidebar" data-color="green" data-image="../../assets/img/sidebar-1.jpg">
+
+  <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
     <!--
               Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
               Tip 2: you can also add an image using data-image tag
           -->
+
     <div class="sidebar-wrapper">
       <ul class="nav">
-        <li>
+        <li class="active">
           <a href="insurance.html">
             <i class="material-icons">dashboard</i>
             <p>Insurance</p>
           </a>
+          <ul>
+            <li><a href="insurance1.html">insurance1</a></li>
+            <li><a href="insurance2.html">insurance2</a></li>
+          </ul>
         </li>
-        <li class="active">
+        <li>
           <a href="user.html">
             <i class="material-icons">person</i>
             <p>User Profile</p>
@@ -68,7 +74,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Profile</a>
+          <a class="navbar-brand" href="#">Insurance</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -114,113 +120,7 @@
     </nav>
 
     <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header" data-background-color="green">
-                <h4 class="title">Edit Profile</h4>
-                <p class="category">Complete your profile</p>
-              </div>
-              <div class="card-content">
-                <form>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Username</label>
-                        <input type="text" class="form-control" >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Email address</label>
-                        <input type="email" class="form-control" >
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Fist Name</label>
-                        <input type="text" class="form-control" >
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Last Name</label>
-                        <input type="text" class="form-control" >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Address</label>
-                        <input type="text" class="form-control" >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group label-floating">
-                        <label class="control-label">City</label>
-                        <input type="text" class="form-control" >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Country</label>
-                        <input type="text" class="form-control" >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Postal Code</label>
-                        <input type="text" class="form-control" >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>About You</label>
-                        <div class="form-group label-floating">
-                          <label class="control-label"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                          <textarea class="form-control" rows="5"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-                  <div class="clearfix"></div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-profile">
-              <div class="card-avatar">
-                <a href="#pablo">
-                  <img class="img" src="../../../assets/img/marc.jpg" />
-                </a>
-              </div>
-
-              <div class="content">
-                <h6 class="category text-gray">CEO / Co-Founder</h6>
-                <h4 class="card-title">Alec Thompson</h4>
-                <p class="card-content">
-                  Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <footer class="footer">
@@ -251,5 +151,14 @@
 
 <!-- Material Dashboard javascript methods -->
 <script src="../../../dist/js/material-dashboard.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    // Javascript method's body can be found in assets/js/demos.js
+    demo.initDashboardPageCharts();
+
+  });
+</script>
 
 </html>

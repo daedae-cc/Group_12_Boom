@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="478a66a5-f166-44e8-a726-649d1d757280" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cover/a.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cover/cover.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cover/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cover/loginpage/a.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cover/loginpage/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cover/loginpage/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cover/loginpage/js/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loginpage/a.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loginpage/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loginpage/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loginpage/js/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/dashboard.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html" afterPath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html" afterPath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,24 +19,52 @@
     <pharConfigPath>$PROJECT_DIR$/tp5/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="131" column="28" lean-forward="true" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
-              <folding>
-                <element signature="e#9520#9526#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3037">
+              <caret line="226" column="35" lean-forward="false" selection-start-line="226" selection-start-column="35" selection-end-line="226" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="278" column="43" lean-forward="true" selection-start-line="278" selection-start-column="43" selection-end-line="278" selection-end-column="43" />
+            <state relative-caret-position="4942">
+              <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insurance.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insurance1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="568">
+              <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insurance2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="628">
+              <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,10 +117,13 @@
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/cover/index.html" />
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/index.html" />
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/cover.css" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html" />
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/dashboard.html" />
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/material-dashboard.css" />
+        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html" />
         <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html" />
+        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance.html" />
+        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance1.html" />
+        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance2.html" />
       </list>
     </option>
   </component>
@@ -117,7 +140,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="27" />
     <option name="y" value="23" />
     <option name="width" value="1235" />
@@ -141,9 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,6 +232,9 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,14 +386,15 @@
       <workItem from="1553428777044" duration="1527000" />
       <workItem from="1553430326000" duration="649000" />
       <workItem from="1553430994044" duration="3640000" />
+      <workItem from="1553850248373" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15715000" />
+    <option name="totallyTimeSpent" value="16218000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="23" width="1235" height="777" extended-state="0" />
+    <frame x="44" y="23" width="1235" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -380,8 +404,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -392,8 +416,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,9 +437,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cover/index.html" />
-    <entry file="file://$PROJECT_DIR$/cover/cover.css" />
-    <entry file="file://$PROJECT_DIR$/cover/index.html" />
     <entry file="file://$PROJECT_DIR$/cover/cover.css" />
     <entry file="file://$PROJECT_DIR$/cover/index.html" />
     <entry file="file://$PROJECT_DIR$/cover/cover.css" />
@@ -440,13 +461,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/provider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/provider.php" />
     <entry file="file://$PROJECT_DIR$/cover/loginpage/js/index.js" />
     <entry file="file://$PROJECT_DIR$/cover/loginpage/css/style.css" />
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -520,36 +535,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/user.html" />
+    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/dashboard.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/apple-icon.png" />
-    <entry file="file://$USER_HOME$/Desktop/dashboard/assets/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/dashboard/assets/css/demo.css" />
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/demo.css" />
-    <entry file="file://$USER_HOME$/Desktop/dashboard/iconfont/material-icons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/dashboard/iconfont/material-icons.css" />
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -581,20 +572,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/upgrade.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="137" column="47" lean-forward="false" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/documentation/tutorial-components.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="433" column="4" lean-forward="false" selection-start-line="433" selection-start-column="4" selection-end-line="433" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/upgrade.html" />
+    <entry file="file://$USER_HOME$/Desktop/dashboard/documentation/tutorial-components.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -621,30 +600,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/typography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/table.html" />
+    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/typography.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/material-dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -657,26 +614,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="131" column="28" lean-forward="true" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
-          <folding>
-            <element signature="e#9520#9526#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3037">
+          <caret line="226" column="35" lean-forward="false" selection-start-line="226" selection-start-column="35" selection-end-line="226" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="278" column="43" lean-forward="true" selection-start-line="278" selection-start-column="43" selection-end-line="278" selection-end-column="43" />
+        <state relative-caret-position="4942">
+          <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
