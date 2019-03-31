@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--修正一个小错误，正确的简体中文界面应该声明为 zh-hans-->
-<html lang="zh-hans">
+<html lang="zh-hans--">
 <head>
     <meta charset="UTF-8">
     <title>教师管理</title>
-    <link rel="stylesheet" type="text/css" href="/thinkphp5/public/static/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/tp5/public/static/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 </head>
 <body class="container">
     <div class="row">
@@ -17,13 +17,13 @@
                     <th>邮箱</th>
                     <th>用户名</th>
                 </tr>
-                {volist name="teachers" id="teacher" key="key"}
+                {volist name="users" id="user" key="key"}<!--user is the variable name  id is used to out put-->
                 <tr>
                     <td>{$key}</td>
-                    <td>{$teacher->getData('name')}</td>
-                    <td>{eq name='teacher->getData("sex")' value='0'}男{else /}女{/eq}</td>
-                    <td>{$teacher->getData('email')}</td>
-                    <td>{$teacher->getData('username')}</td>
+                    <td>{$user->getData('name')}</td>
+                    <td>{eq name='$user->getData("sex")' value='0'}男{else /}女{/eq}</td>
+                    <td>{$user->getData('email')}</td>
+                    <td>{$user->getData('username')}</td>
                 </tr>
                 {/volist}
             </table>
