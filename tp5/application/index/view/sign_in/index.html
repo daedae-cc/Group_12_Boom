@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+</head>
+<body>
+<p>Sign page index</p>
+<p>{eq name="pass" value="0"}{:$message}{/eq}</p>
+<form action="{:url('index/SignIn/signIn')}" method="post">
+    <label for="username">username:</label><input type="text" name="username" id="username" />
+    <label for="password">password:</label><input type="password" name="password" id="password" />
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>
