@@ -1,133 +1,382 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="478a66a5-f166-44e8-a726-649d1d757280" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tp5/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/common/model/Teacher.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/common/validate/Teacher.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/index/controller/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/index/view/index/IndexController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/index/view/index/UserController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/index/view/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/view/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/build.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/build.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/extend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/extend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/public/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/public/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/public/static/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/public/static/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/runtime/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/runtime/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/think" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/think" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/vendor/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/vendor/.gitignore" afterDir="false" />
+    <list default="true" id="439ec64e-23d2-456f-8795-bc8964f84dc7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Group_12_Boom.iml" afterPath="$PROJECT_DIR$/Group_12_Boom.iml" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/.gitattributes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/.hound.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/CNAME" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/CONTRIBUTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/Gemfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/Gemfile.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/Gruntfile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/ISSUE_TEMPLATE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/_config.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/bower.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/composer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/dist/js/npm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_data/browser-bugs.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_data/browser-features.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_data/core-team.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_data/glyphicons.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_data/sass-team.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_data/showcase.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_data/translations.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/ads.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/alerts.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/badges.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/breadcrumbs.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/button-dropdowns.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/button-groups.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/dropdowns.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/glyphicons.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/input-groups.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/jumbotron.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/labels.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/list-group.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/media.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/navbar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/navs.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/page-header.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/pagination.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/panels.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/progress-bars.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/responsive-embed.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/thumbnails.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/components/wells.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/buttons.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/code.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/forms.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/grid.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/helpers.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/images.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/less.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/overview.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/responsive-utilities.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/sass.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/tables.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/css/type.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/customizer-variables.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/accessibility.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/browser-device-support.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/community.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/disabling-responsiveness.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/download.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/examples.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/grunt.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/license.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/template.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/third-party-support.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/tools.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/translations.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/getting-started/whats-included.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/header.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/affix.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/alerts.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/buttons.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/carousel.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/collapse.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/dropdowns.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/modal.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/overview.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/popovers.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/scrollspy.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/tabs.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/tooltips.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/js/transitions.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/about.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/components.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/css.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/customize.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/getting-started.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/javascript.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/main.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_includes/nav/migration.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_layouts/default.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_layouts/home.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_plugins/bridge.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_plugins/bugify.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_pug/customizer-nav.pug" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/_pug/customizer-variables.pug" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/about.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/apple-touch-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/brand/bootstrap-outline.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/brand/bootstrap-punchout.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/brand/bootstrap-solid.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/css/docs.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/css/docs.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/css/src/docs.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/css/src/pygments-manni.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/flash/ZeroClipboard.swf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/components.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/devices.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/expo-lyft.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/expo-newsweek.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/expo-riot.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/expo-vogue.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/marc.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/sass-less.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/sidebar-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/customize.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/docs.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/raw-files.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/src/application.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/src/customizer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/Blob.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/FileSaver.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/ZeroClipboard.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/anchor.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/autoprefixer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/holder.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/jszip.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/less.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/js/vendor/uglify.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/browser-bugs.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/components.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/css.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/customize.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/material-dashboard.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/bootstrap-notify.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/chartist.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/jquery-3.1.0.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/material-dashboard.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/material.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/npm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/cover.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/getting-started.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/MaterialIcons-Regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/MaterialIcons-Regular.ijmap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/MaterialIcons-Regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/MaterialIcons-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/MaterialIcons-Regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/MaterialIcons-Regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/codepoints" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/material-icons.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/javascript.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/migration.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/docs/robots.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/.jshintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/bs-commonjs-generator.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/bs-glyphicons-data-generator.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/bs-lessdoc-parser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/bs-raw-files-generator.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/change-version.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/configBridge.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/npm-shrinkwrap.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/grunt/sauce_browsers.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/.jscsrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/.jshintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/affix.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/alert.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/button.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/carousel.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/collapse.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/dropdown.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/modal.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/popover.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/scrollspy.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tab.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/.jshintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/affix.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/alert.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/button.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/carousel.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/collapse.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/dropdown.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/modal.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/phantom.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/popover.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/scrollspy.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/tab.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/unit/tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/vendor/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/vendor/qunit.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/vendor/qunit.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/affix-with-sticky-footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/affix.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/alert.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/button.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/carousel.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/collapse.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/dropdown.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/modal.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/popover.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/scrollspy.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/tab.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tests/visual/tooltip.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/js/transition.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/.csscomb.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/.csslintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/alerts.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/badges.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/bootstrap.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/breadcrumbs.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/button-groups.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/buttons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/carousel.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/close.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/code.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/component-animations.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/dropdowns.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/forms.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/glyphicons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/grid.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/input-groups.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/jumbotron.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/labels.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/list-group.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/media.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/alerts.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/background-variant.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/border-radius.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/buttons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/center-block.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/clearfix.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/forms.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/gradients.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/grid-framework.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/grid.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/hide-text.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/image.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/labels.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/list-group.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/nav-divider.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/nav-vertical-align.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/opacity.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/pagination.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/panels.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/progress-bar.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/reset-filter.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/reset-text.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/resize.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/responsive-visibility.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/size.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/tab-focus.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/table-row.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/text-emphasis.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/text-overflow.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/mixins/vendor-prefixes.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/modals.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/navbar.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/navs.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/normalize.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/pager.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/pagination.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/panels.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/popovers.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/print.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/progress-bars.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/responsive-embed.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/responsive-utilities.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/scaffolding.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/tables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/theme.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/thumbnails.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/tooltip.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/type.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/utilities.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/less/wells.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/nuget/MyGet.ps1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/nuget/bootstrap.less.nuspec" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/nuget/bootstrap.nuspec" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/package.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7/package.json" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/tp5/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interface/front-end/carousel/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6102">
-              <caret line="226" column="35" selection-start-line="226" selection-start-column="35" selection-end-line="226" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9477">
-              <caret line="351" column="13" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tp5/application/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4428">
-              <caret line="164" selection-start-line="164" selection-end-line="164" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4428">
-              <caret line="164" selection-start-line="164" selection-end-line="164" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#6177#6184#0" expanded="true" />
+                <element signature="e#6551#6558#0" expanded="true" />
+                <element signature="e#6926#6933#0" expanded="true" />
+                <element signature="e#7092#7098#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>background</find>
-      <find>masthead-brand</find>
-      <find>active</find>
-      <find>!</find>
-      <find>cover</find>
-      <find>c</find>
-      <find>btn</find>
-      <find>btn-de</find>
-      <find>btn-</find>
-      <find>pablo</find>
-      <find>btn-primary</find>
-      <find>pull-left</find>
-      <find>container-fluid</find>
-      <find>footer</find>
-      <find>hover</find>
-      <find>purple</find>
-      <find>form-group</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,43 +386,37 @@
       <projects_view />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/cover/loginpage/index.html" />
-        <option value="$PROJECT_DIR$/cover/cover.css" />
-        <option value="$PROJECT_DIR$/cover/index.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/cover/index.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/index.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/cover.css" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/dashboard.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/material-dashboard.css" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance1.html" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance2.html" />
-      </list>
-    </option>
-  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="27" />
-    <option name="y" value="23" />
+    <option name="x" value="119" />
+    <option name="y" value="44" />
     <option name="width" value="1235" />
     <option name="height" value="777" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -187,33 +430,43 @@
             <path>
               <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
               <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="carousel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+              <item name="loginpage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img" />
-      <recent name="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js" />
-      <recent name="$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile" />
-      <recent name="$PROJECT_DIR$/bootstrap-3.3.7/docs" />
-      <recent name="$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css" />
-    </key>
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -309,82 +562,58 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration name="Group_12_Boom" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner directory="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHPUnit.Group_12_Boom" />
-      </list>
-    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="478a66a5-f166-44e8-a726-649d1d757280" name="Default" comment="" />
-      <created>1552876021716</created>
+      <changelist id="439ec64e-23d2-456f-8795-bc8964f84dc7" name="Default" comment="" />
+      <created>1554191332452</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552876021716</updated>
-      <workItem from="1552876023347" duration="3272000" />
-      <workItem from="1552913032983" duration="713000" />
-      <workItem from="1552964688518" duration="334000" />
-      <workItem from="1553172447612" duration="691000" />
-      <workItem from="1553174002005" duration="15000" />
-      <workItem from="1553177228893" duration="52000" />
-      <workItem from="1553404453148" duration="15000" />
-      <workItem from="1553408715604" duration="212000" />
-      <workItem from="1553422511431" duration="16000" />
-      <workItem from="1553423617388" duration="862000" />
-      <workItem from="1553424803006" duration="90000" />
-      <workItem from="1553424930971" duration="3145000" />
-      <workItem from="1553428206686" duration="482000" />
-      <workItem from="1553428777044" duration="1527000" />
-      <workItem from="1553430326000" duration="649000" />
-      <workItem from="1553430994044" duration="3640000" />
-      <workItem from="1553850248373" duration="503000" />
-      <workItem from="1554017671648" duration="14000" />
+      <updated>1554191332452</updated>
+      <workItem from="1554191335794" duration="54000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16232000" />
+    <option name="totallyTimeSpent" value="54000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="23" width="1235" height="777" extended-state="0" />
+    <frame x="119" y="44" width="1235" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3344681" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="SciView" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,173 +622,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tp5/application/.htaccess">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/command.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/common.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/provider.php" />
-    <entry file="file://$PROJECT_DIR$/cover/loginpage/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/cover/loginpage/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/think">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-172" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cover/cover.css" />
-    <entry file="file://$PROJECT_DIR$/cover/a.png" />
-    <entry file="file://$PROJECT_DIR$/cover/loginpage/a.png" />
-    <entry file="file://$PROJECT_DIR$/tp5/public/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cover/loginpage/index.html" />
-    <entry file="file://$PROJECT_DIR$/cover/index.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/cover/index.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/loginpage/js/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/cover.css">
+    <entry file="file://$PROJECT_DIR$/interface/front-end/carousel/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/robots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/a.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/user.html" />
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/dashboard.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/apple-icon.png" />
-    <entry file="file://$USER_HOME$/Desktop/dashboard/assets/css/demo.css" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/demo.css" />
-    <entry file="file://$USER_HOME$/Desktop/dashboard/iconfont/material-icons.css" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/iconfont/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/assets/img/sidebar-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/demo.js" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/js/bootstrap-notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/upgrade.html" />
-    <entry file="file://$USER_HOME$/Desktop/dashboard/documentation/tutorial-components.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="122" column="40" selection-start-line="122" selection-start-column="34" selection-end-line="122" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/loginpage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/apple-touch-icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/table.html" />
-    <entry file="file://$USER_HOME$/Desktop/dashboard/examples/typography.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/dist/css/material-dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="1815" selection-start-line="1815" selection-end-line="1815" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/IdeaProjects/SP2/form.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/dashboard.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6102">
-          <caret line="226" column="35" selection-start-line="226" selection-start-column="35" selection-end-line="226" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9477">
-          <caret line="351" column="13" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4428">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4428">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/docs/font_end/cover/profile/insurance.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6177#6184#0" expanded="true" />
+            <element signature="e#6551#6558#0" expanded="true" />
+            <element signature="e#6926#6933#0" expanded="true" />
+            <element signature="e#7092#7098#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
