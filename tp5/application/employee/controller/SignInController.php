@@ -4,7 +4,7 @@ namespace app\employee\controller;
 
 use think\Controller;
 use think\Request;
-
+use app\employee\model\Employee;
 
 class SignInController extends Controller
 {
@@ -34,7 +34,7 @@ class SignInController extends Controller
 //            return $this->redirect(url('index/index/index'),['message'=>'','pass'=>'1']);
         } else {
 //            return $this->redirect(url('index/SignIn/index'),['message'=>'username or password incorrect','pass'=>'0']);
-            return $this->redirect(url('employee/SignIn/SignIn'));
+            return $this->error('user or password mistake', 'employee/index/index');
 //            return $this->error('username or password incorrent', url('index/signIn/index'));
 
         }

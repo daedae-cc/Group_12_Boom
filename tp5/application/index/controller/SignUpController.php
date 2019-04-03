@@ -8,7 +8,7 @@ use app\index\Controller\userController;
 use app\index\model\User;
 use think\Url;
 
-class SignUpController extends Controller
+class SignUpController extends IsSignInController
 {
     // 用户登录表单
     public function index()
@@ -23,7 +23,7 @@ class SignUpController extends Controller
         return var_dump($postData);
     }
 
-    public function SignUp(){
+    public function signUp(){
         $postData = Request::instance()->post();
         if(User::exist($postData["username"])){
             return $this->error('username exist', url('index/signIn/index'));
@@ -31,10 +31,12 @@ class SignUpController extends Controller
         else{
             if($postData["password"] == $postData["confirmPassword"]){
                 $result = User::insertUser($postData);
+
                 if($result==0){
                     return $this->error('sign up fail', url('index/signIn/index'));
                 }
                 else{
+                    signIn($postData["username"], $postData["password"]);
                     return $this->redirect("index/index/index");
                 }
             }

@@ -32,7 +32,7 @@ class User extends Model
             if ($user->getData('password') == $password) {
                 // 登录
                 session('userId', $user->getData('id'));
-                cookie('userId', $user->getData('id'), 3000);
+//                cookie('userId', $user->getData('id'), 3000);
                 return true;
             }
         }
@@ -72,18 +72,30 @@ class User extends Model
 
     static public function findUser()
     {
-        $id = Request::instance()->cookie("userId");
+        $id = Request::instance()->session("userId");
         $user = User::get($id);
         return $user;
     }
 
     static public function updateUser($postData)
     {
-        $id = Request::instance()->cookie("userId");
+        $id = Request::instance()->session("userId");
         $user = new User();
 // post数组中只有name和email字段会写入
         $result = $user->allowField(true)->save($postData, $id);
 
         return $result;
+    }
+
+    static public function isLogin()
+    {
+        $userId = session('userId');
+
+        // isset()和is_null()是一对反义词
+        if (isset($userId)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

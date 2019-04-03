@@ -17,9 +17,9 @@ class Loss extends Model
     static public function insertLoss($postDate)
     {
         $loss = new Loss($postDate);
-        $cookie = Request::instance()->cookie();
+        $session = Request::instance()->session();
         $loss->allowField(true);
-        $loss->userId = $cookie['userId'];
+        $loss->userId = $session['userId'];
        $result =  $loss->save();
         return $result;
 

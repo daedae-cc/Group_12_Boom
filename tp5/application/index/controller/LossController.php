@@ -7,7 +7,7 @@ use think\Controller;
 
 use think\Request;
 
-class LossController extends Controller
+class LossController extends IsSignInController
 {
     public function index()
     {

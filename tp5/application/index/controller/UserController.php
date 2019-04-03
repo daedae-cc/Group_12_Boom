@@ -31,9 +31,9 @@ class UserController extends Controller
     public function edit()
     {
 
-        $user= User::findUser();
+        $user = User::findUser();
         // 将数据传给V层
-        $this->assign('user',$user);
+        $this->assign('user', $user);
 
         // 获取封装好的V层内容
 
@@ -41,9 +41,10 @@ class UserController extends Controller
         return $this->fetch();
     }
 
-    public function update(){
+    public function update()
+    {
         $postData = Request::instance()->post();
-       User::updateUser($postData);
-        return  $this->redirect("index/user/profile");
+        User::updateUser($postData);
+        return $this->redirect("index/user/profile");
     }
 }

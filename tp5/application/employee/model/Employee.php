@@ -24,7 +24,7 @@ class Employee extends Model
             if ($employee->getData('password') == $password) {
                 // 登录
                 session('employeeId', $employee->getData('id'));
-                cookie('employeeId', $employee->getData('id'));
+//                cookie('employeeId', $employee->getData('id'));
                 return true;
             }
         }
