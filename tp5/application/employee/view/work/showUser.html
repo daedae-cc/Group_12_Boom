@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show User</title>
+</head>
+<body class="container">
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover table-bordered">
+            <tr class="info">
+                <th>id</th>
+                <th>username</th>
+                <th>gender</th>
+                <th>email</th>
+                <th>first name</th>
+                <th>last name</th>
+                <th>VIP</th>
+            </tr>
+            {volist name="users" id="user" key="key"}
+            <tr>
+                <td>{$user->getData('id')}</td>
+                <td>{$user->getData('username')}</td>
+                <td>{$user->getData('gender')}</td>
+                <td>{$user->getData('email')}</td>
+                <td>{$user->getData('firstname')}</td>
+                <td>{$user->getData('lastname')}</td>
+                <td>{$user->getData('vip')}</td>
+            </tr>
+            {/volist}
+        </table>
+    </div>
+</div>
+</body>
+
+</html>

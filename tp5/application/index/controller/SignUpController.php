@@ -18,45 +18,34 @@ class SignUpController extends Controller
         return var_dump($postData);
     }
 
-    // 处理用户提交的登录数据
-    public function login()
-    {
-        //1.direct use database
-//        // 接收post信息
-//        $postData = Request::instance()->post();
-//
-//        // 验证用户名是否存在
-//        $map = array('username'  => $postData['username']);
-//        $user = User::get($map);
-//
-//        // $user要么是一个对象，要么是null。
-//        if (!is_null($user)) {
-//            // 验证密码是否正确
-//            if ($user->getData('password') !== $postData['password']) {
-//                // 用户名密码错误，跳转到登录界面。
-//                return $this->error('password incrrect', url('index'));
-//            } else {
-//                // 用户名密码正确，将user存session。
-//                session('teacherId', $user->getData('id'));
-//                return $this->success('login success', url('User/index'));
-//            }
-//
-//        } else {
-//            // 用户名不存在，跳转到登录界面。
-//            return $this->error('username not exist', url('index'));
-//    }
-        //2. use M and make M to deal with the data
-        // 接收post信息
-
+    public function test(){
         $postData = Request::instance()->post();
         return var_dump($postData);
-        // 直接调用M层方法，进行登录。
-        if (User::login($postData['username'], $postData['password'])) {
-            return $this->success('login success', url('user/index'));
-        } else {
-            return $this->error('username or password incorrent', url('index'));
-        }
+    }
 
+    public function SignUp(){
+        $postData = Request::instance()->post();
+        if(User::exist($postData["username"])){
+            return $this->error('username exist', url('index/signIn/index'));
+        }
+        else{
+            if($postData["password"] == $postData["confirmPassword"]){
+                $result = User::insertUser($postData);
+                if($result==0){
+                    return $this->error('sign up fail', url('index/signIn/index'));
+                }
+                else{
+                    return $this->redirect("index/index/index");
+                }
+            }
+            else{
+                return $this->error('password not the same', url('index/signIn/index'));
+            }
+        }
+    }
+
+    public function emailVerification(){
+        return  $this ->fetch();
     }
 
     // 注销
@@ -69,7 +58,5 @@ class SignUpController extends Controller
         }
     }
 
-    public  function test(){
-        User::test();
-    }
+
 }

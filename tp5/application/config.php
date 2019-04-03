@@ -23,7 +23,7 @@ return [
     // 是否支持多模块
     'app_multi_module'       => true,
     // 入口自动绑定模块
-    'auto_bind_module'       => false,
+    'auto_bind_module'       => true,
     // 注册的根命名空间
     'root_namespace'         => [],
     // 扩展函数文件
@@ -240,4 +240,11 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+
+    'view_replace_str'  =>  [
+        '__PUBLIC__'=>'/Group_12_Boom/tp5/public/',
+        '__ROOT__' => '/Group_12_Boom/tp5/',
+        '__STATIC__' => '/Group_12_Boom/tp5/public/static/'
+    ]
+
 ];

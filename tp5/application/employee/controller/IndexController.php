@@ -1,10 +1,17 @@
 <?php
 namespace app\employee\controller;
 
-class IndexController
+use think\Controller;
+
+class IndexController extends Controller
 {
     public function index()
     {
-        return 'this is employee/index/index';
+        return $this->fetch();
     }
+
+    public function signIn(){
+
+    }
+
 }

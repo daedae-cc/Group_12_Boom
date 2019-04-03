@@ -6,9 +6,13 @@
  * Time: 13:50
  */
 
-namespace  app\index\model;
+namespace app\index\model;
+
 use think\Model;
-class User extends Model{
+use think\Request;
+
+class User extends Model
+{
 
     /**
      * 用户登录
@@ -28,10 +32,21 @@ class User extends Model{
             if ($user->getData('password') == $password) {
                 // 登录
                 session('userId', $user->getData('id'));
+                cookie('userId', $user->getData('id'), 3000);
                 return true;
             }
         }
         return false;
+    }
+
+    static public function exist($username)
+    {
+        $user = User::get(['username' => $username]);
+        if (!is_null($user)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -41,11 +56,34 @@ class User extends Model{
      */
     public function checkPassword($password)
     {
-        if ($this->getData('password') === $this::encryptPassword($password))
-        {
+        if ($this->getData('password') === $this::encryptPassword($password)) {
             return true;
         } else {
             return false;
         }
+    }
+
+
+    static public function insertUser($postData)
+    {
+        $user = new User($postData);
+        return $user->allowField(true)->save();
+    }
+
+    static public function findUser()
+    {
+        $id = Request::instance()->cookie("userId");
+        $user = User::get($id);
+        return $user;
+    }
+
+    static public function updateUser($postData)
+    {
+        $id = Request::instance()->cookie("userId");
+        $user = new User();
+// post数组中只有name和email字段会写入
+        $result = $user->allowField(true)->save($postData, $id);
+
+        return $result;
     }
 }

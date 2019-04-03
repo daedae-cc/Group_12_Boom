@@ -1,10 +1,9 @@
 <?php
 
-namespace app\index\controller;
+namespace app\employee\controller;
 
 use think\Controller;
 use think\Request;
-use app\index\model\User;
 
 
 class SignInController extends Controller
@@ -17,7 +16,8 @@ class SignInController extends Controller
     }
 
     // 处理用户提交的登录数据
-    public function test(){
+    public function test()
+    {
         $postData = Request::instance()->post();
         return var_dump($postData);
     }
@@ -27,20 +27,18 @@ class SignInController extends Controller
 
         //get the input of user
         $postData = Request::instance()->post();
-
-        if (User::signIn($postData['username'], $postData['password'])) {
+        if (Employee::signIn($postData['username'], $postData['password'])) {
 //            return $this->success("success", url('index/index/index'));
 
-            return $this->redirect(url('index/index/index'));
+            return $this->redirect(url('employee/work/index'));
 //            return $this->redirect(url('index/index/index'),['message'=>'','pass'=>'1']);
         } else {
 //            return $this->redirect(url('index/SignIn/index'),['message'=>'username or password incorrect','pass'=>'0']);
-            return $this->redirect(url('index/SignIn/index'));
+            return $this->redirect(url('employee/SignIn/SignIn'));
 //            return $this->error('username or password incorrent', url('index/signIn/index'));
 
         }
     }
-
 
 
     public function signIn_old()
