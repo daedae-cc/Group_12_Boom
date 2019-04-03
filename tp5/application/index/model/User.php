@@ -20,8 +20,8 @@ class User extends Model{
     static public function signIn($username, $password)
     {
         // 验证用户是否存在
-        $map = array('username' => $username);
-        $user = self::get($map);
+        //查询语句
+        $user = User::get(['username' => $username]);
 
         if (!is_null($user)) {
             // 验证密码是否正确

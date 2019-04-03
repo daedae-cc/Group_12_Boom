@@ -18,8 +18,12 @@ class SignInController extends Controller
 
     public function signIn() {
 
+
         //get the input of user
         $postData = Request::instance()->post();
+
+        return var_dump(User::signIn($postData['username'], $postData['password']));
+
         if (User::signIn($postData['username'], $postData['password'])) {
             return $this->redirect(url('index/index/index'));
 //            return $this->redirect(url('index/index/index'),['message'=>'','pass'=>'1']);
