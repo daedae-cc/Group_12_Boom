@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../../static/favicon.ico">
 
     <title>Sign Up Login</title>
 
@@ -32,7 +32,6 @@
     <link href="../../static/css/style.css" rel="stylesheet">
 </head>
 <body>
-
 <div class="navbar-wrapper">
     <div class="container">
 
@@ -72,11 +71,7 @@
         </nav>
     </div>
 </div>
-<form action="{:url('index/signIn/signIn')}" method="post">
-    <label for="username">username:</label><input type="text" name="username" id="username" />
-    <label for="password">password:</label><input type="password" name="password" id="password" />
-    <button type="submit">submit</button>
-</form>
+
 <div class="cotn_principal">
     <div class="cont_centrar">
         <div class="cont_login">
@@ -101,38 +96,24 @@
             </div>
             <div class="cont_forms">
                 <div class="cont_img_back_"><img src="../../static/assets/img/login.png" alt=""/></div>
-                <div class="cont_form_login"><a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                <form class="cont_form_login" method="post" action="{:url('index/signIn/signIn')}">
+                    <a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
                     <h2>LOGIN</h2>
-                    <!--<form>-->
-                        <!--<label for="Email_address">Email address</label><br/>-->
-                        <!--<input id="email_address" type="text" placeholder="Email"/><br/>-->
-                        <!--<label for="password">password</label><br/>-->
-                        <!--<input id="password" type="password" placeholder="Password"/>-->
-                        <!--<button class="btn_login" onClick="cambiar_login()">LOGIN</button>-->
-                    <!--</form>-->
-
-                    <form action="{:url('index/signIn/signIn')}" method="post">
-                        <div class="form-group">
-                            <label for="username">Email address</label>
-                            <input type="text" class="form-control" id="username" placeholder="Email" name ='username'>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password" name = 'password'>
-                        </div>
-                        <button type="submit" class="btn btn-default" onClick="cambiar_login()">Login</button>
-                    </form>
-                </div>
-                <div class="cont_form_sign_up"><a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                    <input type="text" name="username" placeholder="Email"/>
+                    <input type="password" name="password" placeholder="Password"/>
+                    <button class="btn_login" type="submit">LOGIN</button>
+                </form>
+                <form class="cont_form_sign_up" action="{:url('index/signUp/index')}" method="post">
+                    <a href="#"
+                       onClick="ocultar_login_sign_up()"><i
+                            class="material-icons">&#xE5C4;</i></a>
                     <h2>SIGN UP</h2>
-                    <form>
-                        <input type="text" placeholder="Email"/><br/>
-                        <input type="text" placeholder="User"/><br/>
-                        <input type="password" placeholder="Password"/><br/>
-                        <input type="password" placeholder="Confirm Password"/><br/>
-                        <button class="btn_sign_up" onClick="cambiar_sign_up()">SIGN UP</button>
-                    </form>
-                </div>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="text" placeholder="User"/>
+                    <input type="password" placeholder="Password"/>
+                    <input type="password" placeholder="Confirm Password"/>
+                    <button class="btn_sign_up" type="submit">SIGN UP</button>
+                </form>
             </div>
         </div>
     </div>

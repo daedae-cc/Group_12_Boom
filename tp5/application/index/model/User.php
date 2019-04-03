@@ -22,11 +22,10 @@ class User extends Model{
         // 验证用户是否存在
         //查询语句
         $user = User::get(['username' => $username]);
-
         if (!is_null($user)) {
             // 验证密码是否正确
 //            if ($user->checkPassword($password)) {
-            if ($user->getData('password')) {
+            if ($user->getData('password') == $password) {
                 // 登录
                 session('userId', $user->getData('id'));
                 return true;

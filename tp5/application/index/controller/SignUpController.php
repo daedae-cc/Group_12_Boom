@@ -14,7 +14,8 @@ class SignUpController extends Controller
     public function index()
     {
         // 显示登录表单
-        return $this->fetch();
+        $postData = Request::instance()->post();
+        return var_dump($postData);
     }
 
     // 处理用户提交的登录数据

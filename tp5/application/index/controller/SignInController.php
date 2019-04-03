@@ -5,6 +5,7 @@ use think\Controller;
 use think\Request;
 use app\index\model\User;
 
+
 class SignInController extends Controller
 {
     // 用户登录表单
@@ -22,14 +23,16 @@ class SignInController extends Controller
         //get the input of user
         $postData = Request::instance()->post();
 
-        return var_dump(User::signIn($postData['username'], $postData['password']));
 
         if (User::signIn($postData['username'], $postData['password'])) {
-            return $this->redirect(url('index/index/index'));
+            return $this->success("success",url('index/index/index') );
+//            return $this->redirect(url('index/index/index'));
 //            return $this->redirect(url('index/index/index'),['message'=>'','pass'=>'1']);
         } else {
 //            return $this->redirect(url('index/SignIn/index'),['message'=>'username or password incorrect','pass'=>'0']);
-            return $this->redirect(url('index/SignIn/index'));
+//            return $this->redirect(url('index/SignIn/index'));
+            return $this->error('username or password incorrent', url('index/signIn/index'));
+
         }
     }
 
