@@ -68,4 +68,28 @@ class WorkController extends Controller
         $this->assign('losses', $losses);
         return $this->fetch();
     }
+
+    public function detail($id)
+    {
+        $loss = Loss::get($id);
+        $this->assign('loss', $loss);
+
+        return $this->fetch();
+    }
+
+    public function pay($id)
+    {
+        $serverData = Request::instance()->server();
+        $postData = Request::instance()->post();
+        //update the form from 0->2
+        $loss = Loss::get($id);
+        $loss->status = '2';
+        $loss->pay = $postData['pay'];
+
+        $loss->save();
+        return var_dump($loss);
+
+        return var_dump($loss);
+
+    }
 }

@@ -36,7 +36,7 @@ class SignUpController extends IsSignInController
                     return $this->error('sign up fail', url('index/signIn/index'));
                 }
                 else{
-                    signIn($postData["username"], $postData["password"]);
+//                    signIn($postData["username"], $postData["password"]);
                     return $this->redirect("index/index/index");
                 }
             }

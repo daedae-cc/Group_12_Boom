@@ -32,6 +32,7 @@
         <th>firstname</th>
         <th>lastname</th>
         <th>status</th>
+        <th>pay</th>
         <th></th>
     </tr>
     {volist name="losses" id="loss" key="key"}
@@ -42,6 +43,7 @@
         <td>{$loss->getData('firstName')}</td>
         <td>{$loss->getData('temporaryAddress')}</td>
         <td>{$loss->getData('status')}</td>
+        <td>{$loss->getData('pay')}</td>>
         <td>
             <a href="{:url('index/index/index')}">detail</a>
         </td>

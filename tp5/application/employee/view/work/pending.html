@@ -6,11 +6,11 @@
     <link href="/public/static/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<hr />
+<hr/>
 <a href="{:url('employee/work/pending')}" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;pending</a>
 <a href="{:url('employee/work/processing')}" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;processing</a>
 <a href="{:url('employee/work/done')}" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;done</a>
-<hr />
+<hr/>
 <div class="row">
     <div class="col-md-8">
         <form class="form-inline" method="post" action="{:url()}">
@@ -32,6 +32,7 @@
         <th>firstname</th>
         <th>lastname</th>
         <th>status</th>
+        <th>pay</th>
         <th></th>
         <th></th>
         <th></th>
@@ -44,8 +45,9 @@
         <td>{$loss->getData('firstName')}</td>
         <td>{$loss->getData('temporaryAddress')}</td>
         <td>{$loss->getData('status')}</td>
+        <td>{$loss->getData('pay')}</td>>
         <td>
-            <a href="{:url('index/index/index')}">detail</a>
+            <a href="{:url('employee/work/detail',['id'=>$loss->getData('id')])}">detail</a>
         </td>
     </tr>
     {/volist}
