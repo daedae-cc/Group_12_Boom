@@ -17,7 +17,8 @@ class SignInController extends Controller
     }
 
     // 处理用户提交的登录数据
-    public function test(){
+    public function test()
+    {
         $postData = Request::instance()->post();
         return var_dump($postData);
     }
@@ -41,6 +42,14 @@ class SignInController extends Controller
         }
     }
 
+    public function logOut()
+    {
+        if (User::logOut()) {
+            return $this->success('logout success', url('index/index/index'));
+        } else {
+            return $this->error('logout error', url('index/index/index'));
+        }
+    }
 
 
     public function signIn_old()
@@ -82,16 +91,6 @@ class SignInController extends Controller
             return $this->error('username or password incorrent', url('index'));
         }
 
-    }
-
-    // 注销
-    public function logOut()
-    {
-        if (User::logOut()) {
-            return $this->success('logout success', url('index'));
-        } else {
-            return $this->error('logout error', url('index'));
-        }
     }
 
 }

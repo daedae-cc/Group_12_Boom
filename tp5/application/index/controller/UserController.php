@@ -14,7 +14,7 @@ use think\Request;
 use think\Url;
 use app\index\model\User;
 
-class UserController extends Controller
+class UserController extends IsSignInController
 {
     public function index()
     {

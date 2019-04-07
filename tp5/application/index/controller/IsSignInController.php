@@ -21,7 +21,7 @@ class IsSignInController extends Controller
 
         // 验证用户是否登陆
         if (!User::isLogin()) {
-            return $this->redirect(url('index/signIn/index'));
+            return $this->error('please login first',url('index/signIn/index'));
         }
     }
 

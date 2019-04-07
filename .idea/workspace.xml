@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439ec64e-23d2-456f-8795-bc8964f84dc7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tp5/application/employee/controller/WorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/employee/controller/WorkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/employee/view/work/done.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/employee/view/work/done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/employee/view/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/employee/view/work/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/employee/view/work/pending.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/employee/view/work/pending.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/employee/view/work/processing.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/employee/view/work/processing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp5/application/index/controller/SignUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/controller/SignUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp5/application/index/controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp5/application/index/controller/IsSignInController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/controller/IsSignInController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp5/application/index/controller/SignInController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/controller/SignInController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp5/application/index/controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp5/application/index/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp5/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp5/application/index/view/user/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp5/application/index/view/user/profile-old.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,36 +22,57 @@
     <pharConfigPath>$PROJECT_DIR$/tp5/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/controller/WorkController.php">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
-              <folding>
-                <element signature="e#6#84#0#PHP" expanded="true" />
-                <element signature="e#122#140#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/controller/SignInController.php">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-              <folding>
-                <element signature="e#43#64#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="243">
+              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="42" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/profile-old.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/signIn.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/SignUpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="-145">
               <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
               <folding>
                 <element signature="e#39#60#0#PHP" expanded="true" />
@@ -58,87 +81,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Group_12_Boom 4.zip/Group_12_Boom/interface/front-end/userprofile/user.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="206">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="30" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#39#60#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/view/work/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="250" column="75" selection-start-line="250" selection-start-column="75" selection-end-line="250" selection-end-column="75" />
-              <folding>
-                <element signature="e#11639#11645#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/model/Employee.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="24" />
-              <folding>
-                <element signature="e#121#137#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/view/work/processing.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="35" selection-end-column="17" />
-              <folding>
-                <element signature="e#296#302#0" expanded="true" />
-                <element signature="e#423#429#0" expanded="true" />
-                <element signature="e#547#553#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/view/work/done.html">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/SignInController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="513">
-              <caret line="49" column="79" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="79" />
+              <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
               <folding>
-                <element signature="e#297#303#0" expanded="true" />
-                <element signature="e#424#430#0" expanded="true" />
-                <element signature="e#548#554#0" expanded="true" />
+                <element signature="e#40#61#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/view/work/index.html">
+        <entry file="file://$PROJECT_DIR$/tp5/application/index/model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp5/application/employee/view/work/pending.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+            <state relative-caret-position="530">
+              <caret line="109" column="32" lean-forward="true" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
               <folding>
-                <element signature="e#297#303#0" expanded="true" />
-                <element signature="e#424#430#0" expanded="true" />
-                <element signature="e#548#554#0" expanded="true" />
+                <element signature="e#115#131#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,10 +143,13 @@
       <find>sess</find>
       <find>cookie</find>
       <find>teacher</find>
+      <find>sign</find>
+      <find>../../</find>
     </findStrings>
     <replaceStrings>
       <replace>/Group_12_Boom/tp5//public/static/</replace>
       <replace>user</replace>
+      <replace>/public/static/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -202,7 +178,6 @@
         <option value="$PROJECT_DIR$/tp5/application/index/view/sign_in/index.html" />
         <option value="$PROJECT_DIR$/tp5/application/index/view/loss/index.html" />
         <option value="$PROJECT_DIR$/tp5/application/index/controller/LossController.php" />
-        <option value="$PROJECT_DIR$/tp5/application/index/view/index/index.html" />
         <option value="$PROJECT_DIR$/tp5/application/index/view/user/pprofile.html" />
         <option value="$PROJECT_DIR$/tp5/application/config.php" />
         <option value="$PROJECT_DIR$/tp5/application/employee/controller/workController.php" />
@@ -217,9 +192,6 @@
         <option value="$PROJECT_DIR$/tp5/application/index/controller/IsSignIn.php" />
         <option value="$PROJECT_DIR$/tp5/application/database.php" />
         <option value="$PROJECT_DIR$/tp5/application/employee/controller/SignInController.php" />
-        <option value="$PROJECT_DIR$/tp5/application/index/controller/SignInController.php" />
-        <option value="$PROJECT_DIR$/tp5/application/index/model/User.php" />
-        <option value="$PROJECT_DIR$/tp5/application/index/controller/UserController.php" />
         <option value="$PROJECT_DIR$/tp5/application/employee/model/Employee.php" />
         <option value="$PROJECT_DIR$/tp5/application/index/model/Loss.php" />
         <option value="$PROJECT_DIR$/tp5/application/index/view/user/edit.html" />
@@ -231,6 +203,13 @@
         <option value="$PROJECT_DIR$/tp5/application/employee/view/work/detail.html" />
         <option value="$PROJECT_DIR$/tp5/application/employee/controller/WorkController.php" />
         <option value="$PROJECT_DIR$/tp5/application/index/controller/SignUpController.php" />
+        <option value="$PROJECT_DIR$/tp5/application/index/controller/UserController.php" />
+        <option value="$PROJECT_DIR$/tp5/application/index/controller/IsSignInController.php" />
+        <option value="$PROJECT_DIR$/tp5/application/index/model/User.php" />
+        <option value="$PROJECT_DIR$/tp5/application/index/controller/SignInController.php" />
+        <option value="$PROJECT_DIR$/tp5/application/index/controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/tp5/application/index/view/index/index.html" />
+        <option value="$PROJECT_DIR$/tp5/application/index/view/user/user.html" />
       </list>
     </option>
   </component>
@@ -247,7 +226,7 @@
       <path value="$PROJECT_DIR$/tp5/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="814" />
     <option name="height" value="867" />
@@ -283,46 +262,6 @@
               <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
               <item name="tp5" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
-              <item name="tp5" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -331,7 +270,25 @@
               <item name="tp5" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
+              <item name="tp5" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_12_Boom" type="462c0819:PsiDirectoryNode" />
+              <item name="tp5" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Group_12_Boom" type="b2602c69:ProjectViewProjectNode" />
@@ -357,17 +314,18 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\index\view\user" />
+      <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\employee\view\signin" />
+      <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\employee\controller" />
+      <recent name="D:\Work\wamp64\www\Group_12_Boom" />
+      <recent name="$PROJECT_DIR$/interface/dist/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\employee\view\signin" />
       <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\employee\view\index" />
       <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\index\view\sign_up" />
       <recent name="$PROJECT_DIR$/interface" />
-      <recent name="$PROJECT_DIR$/interface/dist/js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\employee\view\signin" />
-      <recent name="D:\Work\wamp64\www\Group_12_Boom\tp5\application\employee\controller" />
-      <recent name="D:\Work\wamp64\www\Group_12_Boom" />
       <recent name="$PROJECT_DIR$/interface/dist/js" />
     </key>
   </component>
@@ -496,18 +454,18 @@
       <workItem from="1554308478588" duration="1818000" />
       <workItem from="1554310521584" duration="15741000" />
       <workItem from="1554326944087" duration="5409000" />
-      <workItem from="1554336787414" duration="5427000" />
+      <workItem from="1554336787414" duration="6892000" />
+      <workItem from="1554618379945" duration="2422000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38436000" />
+    <option name="totallyTimeSpent" value="42323000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1940874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1966581" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -542,30 +500,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface/front-end/userprofile/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="141" column="107" lean-forward="true" selection-start-line="141" selection-start-column="107" selection-end-line="141" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/front-end/carousel/carousel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1315">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/front-end/lossluggage/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/front-end/loginpage/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interface/front-end/carousel/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -619,9 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp5/application/employee/view/signin/index.html" />
     <entry file="file://$PROJECT_DIR$/../index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,13 +564,6 @@
     <entry file="file://$PROJECT_DIR$/../indext.php" />
     <entry file="file://$PROJECT_DIR$/../index1.php" />
     <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/IsSignIn.php" />
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp5/application/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -661,33 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/IsSignInController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/SignInController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
-          <folding>
-            <element signature="e#40#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1367">
-          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
-          <folding>
-            <element signature="e#115#131#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/LossController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -706,38 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/loss/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -839,9 +708,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/SignUpController.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Group_12_Boom 4.zip/Group_12_Boom/interface/front-end/userprofile/user.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Group_12_Boom 4.zip/Group_12_Boom/interface/front-end/userprofile/user.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Group_12_Boom 4.zip/Group_12_Boom/interface/front-end/lossluggage/form.css" />
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/IsSignInController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/loss/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="109" column="32" lean-forward="true" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
+          <folding>
+            <element signature="e#115#131#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/SignInController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
+          <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
+          <folding>
+            <element signature="e#40#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/SignUpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
           <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding>
             <element signature="e#39#60#0#PHP" expanded="true" />
@@ -849,12 +762,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Group_12_Boom 4.zip/Group_12_Boom/interface/front-end/userprofile/user.js">
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="206">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="30" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#39#60#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/signIn.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/profile-old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp5/application/index/view/user/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
         </state>
       </provider>
     </entry>

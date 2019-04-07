@@ -2,7 +2,7 @@
 namespace app\index\controller;
 
 use think\Controller;
-
+use app\index\model\User;
 class IndexController extends Controller
 {
 
@@ -11,6 +11,8 @@ class IndexController extends Controller
      */
     public function index()
     {
+        $isLogin=User::isLogin();
+        $this->assign("isLogin",$isLogin);
         return $this->fetch();
     }
 
