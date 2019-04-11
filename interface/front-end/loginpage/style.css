@@ -43,7 +43,7 @@
   overflow: hidden;
   background-color: #fff;
   margin-top: 150px;
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  /* box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5); */
 }
 
 .cont_forms {
@@ -54,28 +54,28 @@
   width: 320px;
   height: 280px;
   background-color: #eee;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .cont_forms_active_login {
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+ /* box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5); */
   height: 420px;
   top:100px;
   left: 0px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 
 }
 
 .cont_forms_active_sign_up {
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  /* box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5); */
   height: 420px;
   top:100px;
   left:320px;
@@ -83,7 +83,7 @@
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-  transition: all 0.5s;
+  transition: all 0.5s; 
 }
 
 .cont_img_back_grey {
