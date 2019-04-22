@@ -30,14 +30,13 @@ class SignInController extends Controller
         $postData = Request::instance()->post();
 
         if (User::signIn($postData['username'], $postData['password'])) {
-//            return $this->success("success", url('index/index/index'));
-
-            return $this->redirect(url('index/index/index'));
+            return $this->success("sign in success", url('index/index/index'));
+//            return $this->redirect(url('index/index/index'));
 //            return $this->redirect(url('index/index/index'),['message'=>'','pass'=>'1']);
         } else {
 //            return $this->redirect(url('index/SignIn/index'),['message'=>'username or password incorrect','pass'=>'0']);
-            return $this->redirect(url('index/SignIn/index'));
-//            return $this->error('username or password incorrent', url('index/signIn/index'));
+//            return $this->error(url('index/SignIn/index'));
+            return $this->error('username or password incorrent', url('index/signIn/index'));
 
         }
     }

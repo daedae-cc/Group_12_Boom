@@ -66,13 +66,16 @@
                                 <li><a href="#">Separated link</a></li>
                                 <li><a href="#">One more separated link</a></li>
                             </ul>
-                            {eq name="isLogin" value="true"}
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {eq name="isLogin" value="true"}
                         <li><a href="{:url('index/signIn/logOut')}">logout</a></li>
                         {else/}
-                        <li><a href="{:url('index/signIn/index')}">login</a></li>
+                        <li><a href="{:url('index/signIn/index')}"><span
+                                class="glyphicon glyphicon-log-in"></span>
+                            Sign Up/Sign in</a></li>
                         {/eq}
-
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -98,13 +101,6 @@
                     <h1>Travel Insurance</h1>
                     <p>Simple and Flexible Travel Insurance. Buy at home or while traveling, and claim online from
                         anywhere in the world.</p>
-                    {eq name="isLogin" value="true"}
-                    <br/>
-                    {else/}
-                    <p><a class="btn btn-lg btn-primary" href="{:url('index/signIn/index')}" role="button">Sign up /
-                        Sign in today</a></p>
-                    {/eq}
-
                 </div>
             </div>
         </div>

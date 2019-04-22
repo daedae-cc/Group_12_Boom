@@ -46,5 +46,6 @@ class UserController extends IsSignInController
         $postData = Request::instance()->post();
         User::updateUser($postData);
         return $this->redirect("index/user/profile");
+//        return var_dump(User::updateUser($postData));
     }
 }

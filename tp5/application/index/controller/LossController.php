@@ -23,14 +23,16 @@ class LossController extends IsSignInController
 
     public function insertLoss()
     {
+
         $postData = Request::instance()->post();
+//        return var_dump($postData);
 
         $result = Loss::insertLoss($postData);
 
-        if ($result==true)
-            return $this->success("submite successful" , "index/index/index");
-        else{
-            return $this->error("there are some problem",'index/index/index');
+        if ($result == true)
+            return $this->success("submite successful", "index/index/index");
+        else {
+            return $this->error("there are some problem", 'index/index/index');
         }
 
     }

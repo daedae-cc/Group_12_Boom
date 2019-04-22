@@ -23,9 +23,7 @@
                 <th>last name</th>
                 <th>VIP</th>
                 <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+
             </tr>
             {volist name="users" id="user" key="key"}
             <tr>
@@ -33,11 +31,11 @@
                 <td>{$user->getData('username')}</td>
                 <td>{$user->getData('gender')}</td>
                 <td>{$user->getData('email')}</td>
-                <td>{$user->getData('firstname')}</td>
-                <td>{$user->getData('lastname')}</td>
+                <td>{$user->getData('firstName')}</td>
+                <td>{$user->getData('lastName')}</td>
                 <td>{$user->getData('vip')}</td>
                 <td>
-                    <a href="{:url('index/index/index')}">detail</a>
+                    <a href="{:url('employee/work/userDetail',['id'=> $user->getData('id') ])}">detail</a>
                 </td>
             </tr>
             {/volist}

@@ -47,7 +47,7 @@
         <td>{$loss->getData('status')}</td>
         <td>{$loss->getData('pay')}</td>>
         <td>
-            <a href="{:url('employee/work/detail',['id'=>$loss->getData('id')])}">detail</a>
+            <a href="{:url('employee/work/detail',['id'=>$loss->getData('id'),'from'=>0])}">detail</a>
         </td>
     </tr>
     {/volist}

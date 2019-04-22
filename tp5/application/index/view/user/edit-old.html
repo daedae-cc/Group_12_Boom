@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile Edit</title>
+</head>
+<body class="contanier">
+<div class="row">
+    <div class="col-md-12">
+        <form action="{:url('index/user/update')}" method="post">
+            <label>name:</label>
+            <input type="hidden" name="id" value="{$user->getData('id')}" />
+            <input type="text" name="firstname" value="{$user->getData('firstname')}" />
+            <label>usernmae:</label>
+            <input type="text" name="lastname" value="{$user->getData('username')}" />
+            <label>gender:</label>
+            <select name="gender">
+                <option value="0">male</option>
+                <option value="1" {eq name="$user->getData('gender')" value="1"}selected="selected"{/eq}>female</option>
+            </select>
+            <label>email:</label>
+            <input type="email" name="email" value="{$user->getData('email')}" />
+            <button type="submit">保存</button>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

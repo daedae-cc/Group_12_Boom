@@ -79,12 +79,16 @@ class User extends Model
 
     static public function updateUser($postData)
     {
-        $id = Request::instance()->session("userId");
-        $user = new User();
-// post数组中只有name和email字段会写入
-        $result = $user->allowField(true)->save($postData, $id);
 
-        return $result;
+        $id = Request::instance()->session("userId");
+
+        $user = new User();
+
+// 过滤post数组中的非数据表字段数据
+        $result=  $user->allowField(true)->save($postData,['id' => $id]);
+        return $result ;
+
+
     }
 
     static public function isLogin()

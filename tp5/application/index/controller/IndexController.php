@@ -23,4 +23,7 @@ class IndexController extends Controller
     public function contact(){
         return $this->fetch();
     }
+    public function test(){
+        return var_dump(User::get(1));
+    }
 }

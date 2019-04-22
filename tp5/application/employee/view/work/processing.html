@@ -45,7 +45,7 @@
         <td>{$loss->getData('status')}</td>
         <td>{$loss->getData('pay')}</td>>
         <td>
-            <a href="{:url('index/index/index')}">detail</a>
+            <a href="{:url('employee/work/detail',['id'=>$loss->getData('id'),'from'=>1])}">detail</a>
         </td>
         <td>
             <a href="{:url('employee/work/pending')}">pending</a>
