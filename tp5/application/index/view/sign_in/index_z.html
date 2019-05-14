@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/static/css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="/static/favicon.ico">
+    <title>注册/登陆</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Hibernia-Sino</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{:url('index/index/index')}">首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{:url('index/index/about')}">关于我们</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{:url('index/index/contact')}">联系我们</a>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <!-- multiple languages-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    语言
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{:url('index/signIn/changeLanguage',['lang'=> 1])}">English</a>
+                    <a class="dropdown-item" href="{:url('index/signIn/changeLanguage',['lang'=> 2])}">简体中文</a>
+                </div>
+            </li>
+            <!-- multiple languages End-->
+
+            <!-- SignIn and logOut -->
+            {eq name="isLogin" value="true"}
+            <li class="nav-item">
+                <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                    登出</a>
+            </li>
+            {else/}
+            <li class="nav-item">
+                <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                    登入 / 注册</a>
+            </li>
+            {/eq}
+            <!-- SignIn and logOut End -->
+        </ul>
+    </div>
+</nav>
+
+
+<div calss="container">
+    <div class="cotn_principal ">
+        <div class="cont_centrar">
+            <div class="cont_login">
+                <div class="cont_info_log_sign_up row ">
+                    <div class="col_md_login ">
+                        <div class="cont_ba_opcitiy">
+                            <h2>登录</h2>
+                            <p>已有账户</p>
+                            <button class="btn_login" onClick="cambiar_login()">登陆</button>
+                        </div>
+                    </div>
+                    <div class="col_md_sign_up col">
+                        <div class="cont_ba_opcitiy">
+                            <h2>注册</h2>
+                            <p>新用户</p>
+                            <button class="btn_sign_up" onClick="cambiar_sign_up()">注册</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_back_info">
+                    <div class="cont_img_back_grey"><img src="/static/assets/img/login.png" alt=""/></div>
+                </div>
+                <div class="cont_forms">
+                    <div class="cont_img_back_"><img src="/static/assets/img/login.png" alt=""/></div>
+
+                    <form class="cont_form_login needs-validation" novalidate method="post" action="{:url('index/signIn/signIn')}">
+                        <a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#935;</i></a>
+                        <h2>登陆</h2>
+                        <input style="position: relative;  left: 25px;"  class="form-control" required type="email" name="username" placeholder="邮箱"/>
+                        <div class="invalid-feedback">
+                            请输入邮箱地址
+                        </div>
+
+                        <input style="position: relative;  left: 25px;"  class="form-control" required type="password" name="password" placeholder="密码"/>
+                        <div class="invalid-feedback">
+                            请输入密码
+                        </div>
+                        <button class="btn_login" type="submit">登陆</button>
+                    </form>
+
+                    <form class="cont_form_sign_up needs-validation" novalidate action="{:url('index/signUp/signUp')}"
+                          method="post">
+                        <a href="#"
+                           onClick="ocultar_login_sign_up()">
+                            <i class="material-icons">&#935;</i></a>
+                        <h2>注册</h2>
+                        <input style="position: relative;  left: 25px;"  class="form-control " type="email" name="username" placeholder="邮箱"/>
+                        <div class="invalid-feedback">
+                            请输入邮箱地址
+                        </div>
+                        <input style="position: relative;  left: 25px;"  class="form-control " type="password" name="password" oninput="check(this)" placeholder="密码"/>
+                        <div class="invalid-feedback">
+                            <p id="v1">请输入密码</p>
+                        </div>
+                        <input style="position: relative;  left: 25px;"  class="form-control " type="password" name="confirmPassword" oninput="checkP(this)" placeholder="密码确认"/>
+                        <div class="invalid-feedback">
+                            <p id="v2">请再次输入密码</p>
+                        </div>
+                        <button class="btn_sign_up" type="submit">注册</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+    function check(input) {
+        if (input.value.length < 3) {
+            document.getElementById("v1").innerHTML = "密码长度过短，应至少6位"
+            input.setCustomValidity("密码长度过短，应至少6位");
+        } else if (!input.value.match("[0-9]+")) {
+            document.getElementById("v1").innerHTML = "需要包含数字"
+            input.setCustomValidity("需要包含数字");
+        } else if (!input.value.match("[A-Z]+")) {
+            document.getElementById("v1").innerHTML = "需要包含大写字母"
+            input.setCustomValidity("需要包含大写字母 ");
+        } else if (!input.value.match("[a-z]+")) {
+            document.getElementById("v1").innerHTML = "需要包含小写字母"
+            input.setCustomValidity("需要包含小写字母");
+        } else if (!input.value.match("[,.<>{}~!@#$%^&*]")) {
+            document.getElementById("v1").innerHTML = "需要包含特殊字符"
+            input.setCustomValidity("需要包含特殊字符");
+        } else {
+            // input is fine -- reset the error message
+            document.getElementById("v1").innerHTML = ""
+            input.setCustomValidity("");
+        }
+    }
+
+
+    function checkP(input) {
+
+        if (input.value != document.getElementById("p1").value) {
+            document.getElementById("v2").innerHTML = "Password not the same"
+            input.setCustomValidity("Password not the same");
+        } else {
+            document.getElementById("v2").innerHTML = ""
+            input.setCustomValidity("");
+        }
+    }
+</script>
+
+<!-- Optional JavaScript -->
+<script src="/static/js/login.js"></script>
+<!-- jQuery -->
+<script src="/static/js/common/jquery-3.4.1.min.js"></script>
+<!--Popper.js-->
+<script src="/static/js/common/popper.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="/static/js/common/bootstrap.min.js"></script>
+</body>
+</html>

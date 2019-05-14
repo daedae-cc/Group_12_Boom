@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+<!--    <link href="/static/css/common/all.css" rel="stylesheet">-->
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+<!--    <link href="/static/css/common/mdb.min.css" rel="stylesheet">-->
+    <!-- Custom styles -->
+    <link href="/static/css/index/index/index/index.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Hibernia-Sino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{:url('index/index/index')}">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/about')}">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/contact')}">联系我们</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- multiple languages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        语言
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguage',['lang'=> 1])}">English</a>
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguage',['lang'=> 2])}">简体中文</a>
+                    </div>
+                </li>
+                <!-- multiple languages End-->
+
+                <!-- SignIn and logOut -->
+                {eq name="isLogin" value="true"}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                        登出</a>
+                </li>
+                {else/}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                        登入 / 注册</a>
+                </li>
+                {/eq}
+                <!-- SignIn and logOut End -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Navbar End -->
+
+<main role="main">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" src="/static/img/index/index/index/slide1.jpeg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1>旅行保险</h1>
+                        <p>简单灵活的旅游保险。在家预定，随时出发，身在何处，一键预定。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="second-slide" src="/static/img/index/index/index/slide2.jpeg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>我们是谁</h1>
+                        <p>遇见 Hibernia-Sino 背后的团队</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="third-slide" src="/static/img/index/index/index/slide3.jpeg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>24 小时紧急援助</h1>
+                        <p>不管您在哪里，我们随时可以提供帮助！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="/static/img/index/index/index/insurance.jpg"
+                     alt="Generic placeholder image" width="140"
+                     height="140">
+                <h2>购买保险</h2>
+                <p>Hibernia-Sino 旅游保险，<br/>覆盖您的所有旅程。</p>
+                <p><a class="btn btn-success" href="{:url('index/insurance/index')}" role="button">展示细节
+                    &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="/static/img/index/index/index/form.jpg"
+                     alt="Generic placeholder image" width="140"
+                     height="140">
+                <h2>行李丢失</h2>
+                <p>丢失了行李？<br/>即刻办理！</p>
+                <p><a class="btn btn-success" href="{:url('index/loss/index')}" role="button">展示细节
+                    &raquo;</a>
+                </p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="/static/img/index/index/index/user.jpg"
+                     alt="Generic placeholder image" width="140"
+                     height="140">
+                <h2>个人信息</h2>
+                <p>准备好了吗？<br/>请您完善个人资料</p>
+                <p><a class="btn btn-success" href="{:url('index/user/index')}" role="button">展示细节
+                    &raquo;</a>
+                </p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="copyright text-right">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script>
+            Hibernia-Sino made with love for a better web
+        </p>
+    </footer>
+</main>
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery -->
+<script src="/static/js/common/jquery-3.4.1.min.js"></script>
+<!--Popper.js-->
+<script src="/static/js/common/popper.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="/static/js/common/bootstrap.min.js"></script>
+</body>
+</html>

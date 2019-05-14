@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon.ico">
+
+    <title>Insurance</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/static/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="/static/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+
+    <link href="/static/css/purchase.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Hibernia-Sino</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{:url('index/index/index')}">Home</a></li>
+                        <li><a href={:url('index/index/about')}>About</a></li>
+                        <li><a href="{:url('index/index/contact')}">Contact</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {eq name="isLogin" value="true"}
+                        <li><a href="{:url('index/signIn/logOut')}"><span
+                                class="glyphicon glyphicon-log-in"></span>
+                            logout</a></li>
+                        {else/}
+                        <li><a href="{:url('index/signIn/index')}"><span
+                                class="glyphicon glyphicon-log-in"></span>
+                            Sign Up/Sign in</a></li>
+                        {/eq}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Primary</strong>
+                        <h3 class="mb-0">Primary insurance</h3>
+                        <!--<div class="mb-1 text-muted">Nov 12</div>-->
+                        <p class="card-text mb-auto">mainly applies to the loss of small pieces of luggage and carry-on
+                            items (weight 5Kg, volume not more than 20 40 55cm)<br> The free air accident insurance of
+                            100 thousand yuan is sent, get namely take effect immediately, enjoy exceed value safeguard
+                            between the snap of a finger!</p>
+                        <a href="{:url('index/insurance/payFor',['insuranceId'=>1])}"
+                           class="stretched-link">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Intermediate</strong>
+                        <h3 class="mb-0">Intermediate insurance</h3>
+                        <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                        <p class="mb-auto">Intermediate insurance:It is mainly used for the loss of self-care luggage
+                            (weight 10Kg, volume no more than 20 40 55cm)<br> For the people who travel by plane within
+                            48 hours, 9.88 yuan will enjoy the aviation accident protection of 5 million yuan. Fly with
+                            buy, economic and practical, effective immediately</p>
+                        <a href="{:url('index/insurance/payFor',['insuranceId'=>2])}"
+                           class="stretched-link">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">Premium</strong>
+                        <h3 class="mb-0">Premium insurance</h3>
+                        <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                        <p class="mb-auto">it is mainly applicable to the loss of large luggage and checked items
+                            (weight 50Kg, volume cannot exceed 40 60100cm)<br> As long as 98 yuan, you can enjoy one
+                            year, the amount of insurance up to 5 million unlimited air accident protection, each trip
+                            without any prior registration procedures"</p>
+                        <a href="{:url('index/insurance/payFor',['insuranceId'=>3])}"
+                           class="stretched-link">Purchase</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/static/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/static/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

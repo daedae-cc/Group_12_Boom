@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="/static/css/form.css" rel="stylesheet"/>
+
+    <title>Loss Detail</title>
+</head>
+
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Hibernia-Sino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{:url('index/index/index')}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/about')}">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/contact')}">CONTACT</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- multiple languages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        LANGUAGE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{:url('index/loss/changeLanguageD',['lang'=> 1])}">English</a>
+                        <a class="dropdown-item" href="{:url('index/loss/changeLanguageD',['lang'=> 2])}">简体中文</a>
+                    </div>
+                </li>
+                <!-- multiple languages End-->
+
+                <!-- SignIn and logOut -->
+                {eq name="isLogin" value="true"}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                        LOGOUT</a>
+                </li>
+                {else/}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                        SIGN IN/SIGN UP</a>
+                </li>
+                {/eq}
+                <!-- SignIn and logOut End -->
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <div class="main-panel">
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="card">
+                            <div class="card-header" style="background: #1e7e34">
+                                <h4 class="title">Luggage Loss Form</h4>
+                                <p class="category">We would like to offer our apologies for not being able to deliver
+                                    your luggage on your arrival, Would you please complete this form and forward to the
+                                    address given above if you do not receive luggage within 72 hours after your
+                                    report.Thanks.</p>
+                            </div>
+                            <div class="card-content">
+                                <form action="{:url('index/Loss/insertLoss')}" method="post">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Passport or other identification
+                                                    No.:</label>
+                                                <input disabled type="text" class="form-control" name="pid"
+                                                       value="{:$loss->getData('pid')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Name:</label>
+                                                <input disabled type="text" class="form-control" name="firstName"
+                                                       value="{:$loss->getData('firstName')}">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Permanent residence address&Tel:</label>
+                                                <input disabled type="text" class="form-control" name="permanentAddress"
+                                                       value="{:$loss->getData('permanentAddress')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">E-mail:</label>
+                                                <input disabled type="email" class="form-control" name="email"
+                                                       value="{:$loss->getData('email')}">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Temporary residence address&Tel:</label>
+                                                <input disabled type="text" class="form-control" name="temporaryAddress"
+                                                       value="{:$loss->getData('temporaryAddress')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Post Code:</label>
+                                                <input disabled type="text" class="form-control" name="postCode"
+                                                       value="{:$loss->getData('postCode')}">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Airline:</label>
+                                                <input disabled type="text" class="form-control" name="airline"
+                                                       value="{:$loss->getData('airline')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Flight No.:</label>
+                                                <input disabled type="text" class="form-control" name="fNo"
+                                                       value="{:$loss->getData('fNo')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Date:</label>
+                                                <input disabled type="date" class="form-control" name="date"
+                                                       value="{:$loss->getData('date')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">From:</label>
+                                                <input disabled type="text" class="form-control" name="fromP"
+                                                       value="{:$loss->getData('fromP')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">To:</label>
+                                                <input disabled type="text" class="form-control" name="toP"
+                                                       value="{:$loss->getData('toP')}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Type and Colour:</label>
+                                                <input disabled type="text" class="form-control" name="typeColor"
+                                                       value="{:$loss->getData('typeColor')}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Brand name:</label>
+                                                <input disabled type="text" class="form-control" name="brandName"
+                                                       value="{:$loss->getData('brandName')}">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Please write down the name or any other
+                                                        special label on your luggage.</label>
+                                                    <textarea disabled class="form-control" rows="5" name="more"
+                                                              value="{:$loss->getData('more')}"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--                                    <button type="submit" class="btn btn-primary pull-right" >Submit</button>-->
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<script src="/static/js/form.js"></script>
+<!-- jQuery -->
+<script src="/static/js/common/jquery-3.4.1.min.js"></script>
+<!--Popper.js-->
+<script src="/static/js/common/popper.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="/static/js/common/bootstrap.min.js"></script>
+</body>
+</html>

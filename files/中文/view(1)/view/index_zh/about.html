@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon.ico">
+
+    <title>关于我们</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/static/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/static/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/about.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Hibernia-Sino</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{:url('index/index/index')}">主页</a></li>
+                        <li><a href={:url('index/index/about')}>关于</a></li>
+                        <li><a href="{:url('index/index/contact')}">联系</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">下拉<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">行为</a></li>
+                                <li><a href="#">其他行为</a></li>
+                                <li><a href="#">其他事务</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">导航页眉</li>
+                                <li><a href="#">分离链接</a></li>
+                                <li><a href="#">另一个分离链接</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {eq name="isLogin" value="true"}
+                        <li><a href="{:url('index/signIn/logOut')}"><span
+                                class="glyphicon glyphicon-log-in"></span>
+                            退出</a></li>
+                        {else/}
+                        <li><a href="{:url('index/signIn/index')}"><span
+                                class="glyphicon glyphicon-log-in"></span>
+                            注册/登陆</a></li>
+                        {/eq}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img class="first-slide" src="/static/assets/img/image2.png" alt="First slide">
+        </div>
+
+        <div class="container">
+            <div class="zone zone-content">
+                <article class="partner-public-content-page content-item">
+                    <section class='Mhero Mhero--photo'>
+                        <div class="row">
+                            <div class="Mhero-inner small-12 medium-7 large-5 column">
+                                <div class="Mhero-intro">
+                                    <div class="Mhero-media" style='background-image: url(/static/assets/img/image2.png)'></div>
+
+                                    <h1 class="Mhero-title Mhero-copy">
+                                        关于Hibernia Sino
+                                    </h1>
+                                </div>
+                                <div class="Mhero-content">
+                                    <h3 class="Mhero-copy standfirst">
+                                        这是对我们团队的介绍，以及我们的工作。
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="container-hashero">
+                        <div class="row">
+                            <div class="small-12 medium-3 large-4 column StickySidebar sticky-container" data-sticky-container data-sticky-on="medium">
+                                <nav class="NavList sticky" data-sticky data-anchor="stickySidebar">
+                                    <h3 class="NavList-title">快速链接</h3>
+                                    <ul class="NavList-menu" data-smoothscroll>
+                                        <li>
+                                            <a href="#id1">介绍</a>
+                                        </li>
+                                        <li>
+                                            <a href="#id2">任务声明</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div id="stickySidebar" class="small-12 medium-9 large-8 column">
+                                <div class="cmsArticle-content">
+                                    <h2 id="id1">介绍</h2>
+                                    <p><h5>团队名字:</h5>G12 Boom!<br><br><h5>团队成员:</h5><li>16206527 吴子钦</li><li>16206952 王泽志</li><li>16206469 王兆瑞</li><li>16206777 王希豪</li><li>16206534 夏冬雪</li><br> </p>
+                                    <figure>
+                                        <img class="img-responsive" src="/static/assets/img/image1.jpg"/>
+                                    </figure>
+                                </div>
+                                <div class="cmsArticle-content">
+                                    <h2 id="id2">任务声明</h2>
+                                    <p>我们的软件工程团队已经被雇佣来满足客户的需求
+希比尼亚-中澳旅游保险公司。希比尼亚-西诺是一家旅游保险公司他专门从事爱尔兰和中国之间的旅游。他们正在移动工作流从过时的桌面软件系统到云计算的过程。这将允许客户更新他们的详细信息，更新他们的保单，并在线登记索赔。解决方案必须是基于云计算，可以在移动设备和个人电脑上工作。希比尼亚-西诺的主要担忧如下:</p>
+                                    <p>• 安全性</p>
+                                    <p>• 可靠性</p>
+                                    <p>• 易于Hibernia-Sino客户员工使用</p>
+                                    <p>• 为用户和员工提供英文或中文界面的能力</p>
+                                    <p>对于第一个beta解决方案，我们的团队只需要交付一个处理丢失行李的系统。客户应该能够在网上提交行李遗失索赔，而员工则可以在线处理这些索赔。我们可以将问题通过电子邮件发送给在Hibernia的团队，但是每个人每周只能发送一封电子邮件，电子邮件地址是hibernate-sino@hotmail.com。我们有12周的时间来实施一个解决方案。第13周我们会提供一份书面报告记录您已经实现到hibernate - sino的软件。第14周和第15周我们将向赫伯尼亚-西诺展示我们的原型机。 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+    </div><!-- /.container -->
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/static/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/static/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

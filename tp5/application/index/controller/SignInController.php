@@ -13,8 +13,16 @@ class SignInController extends Controller
     public function index()
     {
         // 显示登录表单
-        return $this->fetch();
+        $isLogin = User::isLogin();
+        //send information
+        $this->assign("isLogin", $isLogin);
+        if (session("language") == 1) {
+            return $this->fetch();
+        } else {
+            return $this->fetch('index_z');
+        }
     }
+
 
     // 处理用户提交的登录数据
     public function test()
@@ -30,7 +38,7 @@ class SignInController extends Controller
         $postData = Request::instance()->post();
 
         if (User::signIn($postData['username'], $postData['password'])) {
-            return $this->success("sign in success", url('index/index/index'));
+            return $this->redirect(url('index/index/index'));
 //            return $this->redirect(url('index/index/index'));
 //            return $this->redirect(url('index/index/index'),['message'=>'','pass'=>'1']);
         } else {
@@ -44,10 +52,27 @@ class SignInController extends Controller
     public function logOut()
     {
         if (User::logOut()) {
-            return $this->success('logout success', url('index/index/index'));
+            return $this->redirect(url('index/index/index'));
         } else {
             return $this->error('logout error', url('index/index/index'));
         }
+    }
+
+    //用户名校验
+    function checkNM($name)
+    {
+        //在数据库中根据条件查询结果
+        $info = User::exist($name);
+        if ($info) {
+            echo "<span style='color:red'>
+         用户名已存在，请换一个
+         </span>";
+        } else {
+            echo "<span style='color:green'>
+         恭喜，用户名可以使用
+         </span>";
+        }
+        exit;
     }
 
 
@@ -91,5 +116,10 @@ class SignInController extends Controller
         }
 
     }
-
+    public function changeLanguage($lang = 1)
+    {
+        User::setLanguage($lang);
+//        return $lang;
+        $this->redirect("index/signIn/index");
+    }
 }

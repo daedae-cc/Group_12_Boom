@@ -1,398 +1,166 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html lang="en-us" class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>
-<html lang="en-us" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>
-<html lang="en-us" class="no-js ie8"> <![endif]-->
-<!--[if IE 9]>
-<html lang="en-us" class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!-->
-<html lang="en" class="no-js static detail-partner-public-content-page contents">
-<!--<![endif]-->
+<html lang="en">
 <head>
-    <meta name="classification" content="Travel, Travel Safety, Travel Insurance"/>
-    <meta name="Rating" content="General"/>
-    <meta name="distribution" content="Global"/>
-    <meta name="author" content="World Nomads"/>
-    <meta name="Copyright" content="Copyright (c) 2004-2019 World Nomads"/>
-    <meta http-equiv="imagetoolbar" content="no"/>
-    <meta name="MSSmartTagsPreventParsing" content="true"/>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-    <meta name="description" content="World Nomads partner Console"/>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-    <!-- Just IE? -->
-    <!--[if IE]>
-    <link rel="shortcut icon" href="/Themes/Nomads/Images/favicon.ico"><![endif]-->
-
-    <link rel="canonical" href="https://www.worldnomads.com"/>
-
-    <title>World Nomads Partners Network</title>
-
-    <!--[if (lt IE 9) & (!IEMobile)]>
-    <script type="text/javascript" src="/Themes/Partners/Scripts/js-head-ie8.min.js"></script>
-    <![endif]-->
-
-    <!--[if (gte IE 9) | (!IE)]><!-->
-    <script type="text/javascript" src="js1.js"></script>
-    <!--<![endif]-->
-
-    <meta content="Orchard" name="generator"/>
-    <meta content="The history of World Nomads. We&#39;ve been all over the globe too &amp; we&#39;ve been around a while. Come and join us."
-          name="description"/>
-    <meta content="IE=edge,chrome=1" name="X-UA-Compatible"/>
-    <link href="/Themes/Nomads/Images/favicon.png" rel="icon"/>
-
-
-    <script>
-        // TODO: Update module to do this so that it isn't hardcoded into every environment.
-        wng.googleAnalytics('UA-177811-39', 'GTM-xxxxx');
-    </script>
-    <script type="text/javascript">
-        (function (o) {
-            var b = "https://api.autopilothq.com/anywhere/",
-                t = "b9a25db2517d4efa8e61dc333dc5e37c95071585dc9741f99edb957ce0ba329b", a = window.AutopilotAnywhere = {
-                    _runQueue: [], run: function () {
-                        this._runQueue.push(arguments);
-                    }
-                }, c = encodeURIComponent, s = "SCRIPT", d = document, l = d.getElementsByTagName(s)[0],
-                p = "t=" + c(d.title || "") + "&u=" + c(d.location.href || "") + "&r=" + c(d.referrer || ""),
-                j = "text/javascript", z, y;
-            if (!window.Autopilot) window.Autopilot = a;
-            if (o.app) p = "devmode=true&" + p;
-            z = function (src, asy) {
-                var e = d.createElement(s);
-                e.src = src;
-                e.type = j;
-                e.async = asy;
-                l.parentNode.insertBefore(e, l);
-            };
-            if (!o.noaa) {
-                z(b + "aa/" + t + '?' + p, false)
-            }
-            ;y = function () {
-                z(b + t + '?' + p, true);
-            };
-            if (window.attachEvent) {
-                window.attachEvent("onload", y);
-            } else {
-                window.addEventListener("load", y, false);
-            }
-        })({});
-    </script>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/static/css/index/index/about/about.css" rel="stylesheet">
+    <link href="/static/css/index/index/about/about2.css" rel="stylesheet">
+    <title>About</title>
 </head>
-<body id="homepage">
 
+<body>
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Hibernia-Sino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{:url('index/index/index')}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/about')}">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/contact')}">CONTACT</a>
+                </li>
+            </ul>
 
-<link rel="stylesheet" href="css1.css"/>
-<link rel="stylesheet" href="css2.css"/>
-<div class="partners" id="layout-wrapper">
-    <div id="layout-wrapper">
-        <div class="zone zone-header">
-            <article class="widget-PartnerPages widget-header widget-kosmos-nav-widget widget">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- multiple languages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        LANGUAGE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguageA',['lang'=> 1])}">English</a>
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguageA',['lang'=> 2])}">简体中文</a>
+                    </div>
+                </li>
+                <!-- multiple languages End-->
 
-
-                <header class="Header">
-                    <a href="/" class="partners-logo Header-logo BrandLogo BrandLogo--reverse" title="World Nomads">
-                        <span class="BrandLogo-img"></span> <span class="BrandLogo-fallback"></span> </a>
-                    <nav class="Header-nav">
-                        <a class="Header-navItem is-small" href="/partnerpublic/partner-program">What is it?</a>
-                        <a class="Header-navItem is-small" href="/partnerpublic/about">About us</a>
-                        <a class="Header-navItem is-small" href="/partnerpublic/success-stories">Success Stories</a>
-                        <a class="Header-navItem is-small" href="/partnerpublic/faq">FAQs</a>
-                        <a class="Header-navItem is-small" href="/partnerpublic/contact">Contact</a>
-                        <a class="Header-navItem Header-signIn is-mobile" href="/">Sign In</a>
-
-                        <button id="headerNavToggle"
-                                class="Header-navToggle NavToggle Icon--reverse icon-wn-bars"></button>
-                    </nav>
-                </header>
-                <nav id="sideNav" class="SideNav SideNav-is-hidden">
-                    <ul class="SideNav-content">
-                        <li>
-                            <a class="SideNav-contentItem" href="/"><span class="SideNav-contentTitle">Home</span></a>
-                        </li>
-                        <li>
-                            <a class="SideNav-contentItem" href="/partnerpublic/partner-program"><span
-                                    class="SideNav-contentTitle">What is it?</span></a>
-                        </li>
-                        <li>
-                            <a class="SideNav-contentItem" href="/partnerpublic/about"><span
-                                    class="SideNav-contentTitle">About us</span></a>
-                        </li>
-                        <li>
-                            <a class="SideNav-contentItem" href="/partnerpublic/success-stories"><span
-                                    class="SideNav-contentTitle">Success Stories</span></a>
-                        </li>
-                        <li>
-                            <a class="SideNav-contentItem" href="/partnerpublic/faq"><span class="SideNav-contentTitle">FAQs</span></a>
-                        </li>
-                        <li>
-                            <a class="SideNav-contentItem" href="/partnerpublic/contact"><span
-                                    class="SideNav-contentTitle">Contact</span></a>
-                        </li>
-                        <li>
-                            <a class="SideNav-contentItem" href="/"><span
-                                    class="SideNav-contentTitle">Sign In</span></a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </article>
+                <!-- SignIn and logOut -->
+                {eq name="isLogin" value="true"}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                        LOGOUT</a>
+                </li>
+                {else/}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                        SIGN IN/SIGN UP</a>
+                </li>
+                {/eq}
+                <!-- SignIn and logOut End -->
+            </ul>
         </div>
-        <div class="zone zone-content">
+    </nav>
+</header>
+<!-- Navbar End-->
 
-            <article class="partner-public-content-page content-item">
-                <header>
-
-                </header>
-
-
-                <section class='Mhero Mhero--photo'>
-                    <div class="row">
-                        <div class="Mhero-inner small-12 medium-7 large-5 column">
-                            <div class="Mhero-intro">
-                                <div class="Mhero-media "
-                                     style='background-image: url(https://media.worldnomads.com/Partners/hero/wn-partner-about-wn.jpg)'></div>
-
-                                <h1 class="Mhero-title Mhero-copy">
-                                    About Hibernia SinoTravel
-                                </h1>
-                            </div>
-                            <div class="Mhero-content">
-                                <h3 class="Mhero-copy standfirst">
-                                    Here’s an introduction to our team and what we do.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-                <div class="container-hashero">
-
-                    <div class="row">
-                        <div class="small-12 medium-3 large-4 column StickySidebar sticky-container"
-                             data-sticky-container data-sticky-on="medium">
-                            <nav class="NavList sticky" data-sticky data-anchor="stickySidebar">
-                                <h3 class="NavList-title">Quick links</h3>
-                                <ul class="NavList-menu" data-smoothscroll>
-                                    <li>
-                                        <a href="#id1">Introduction</a>
-                                    </li>
-                                    <li>
-                                        <a href="#id2">Task Statement</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div id="stickySidebar" class="small-12 medium-9 large-8 column">
-                            <div class="cmsArticle-content">
-                                <h2 id="id1">Introduction</h2>
-                                <p><h5>Group Name:</h5>G12 Boom!<br><br><h5>Team Member:</h5>
-                                <li>16206527 Ziqin Wu</li>
-                                <li>16206952 Zezhi Wang</li>
-                                <li>16206469 Zhaorui Wang</li>
-                                <li>16206777 Xihao Wang</li>
-                                <li>16206534 Dongxue Xia</li>
-                                <br> </p>
-                                <figure>
-                                    <img src="http://img17.3lian.com/d/file/201701/23/cbf3ce5314f244113bd011f1a6d40bbd.jpg"/>
-                                </figure>
-                                <p></p>
-                            </div>
-                            <div class="cmsArticle-content">
-                                <h2 id="id2">Task Statement</h2>
-                                <p>Our software engineering team has been hired to meet the needs of a client, the
-                                    Hibernia-Sino Travel Insurance Company. Hibernia-Sino is a travel insurance company
-                                    who specializes in travel between Ireland and China. They are moving their workflow
-                                    processes from dated desktop software systems to the cloud. This will allow
-                                    customers to
-                                    update their details, renew their policies, and register claims online. The solution
-                                    must be
-                                    cloud-based, and work on mobile as well as PCs. Hibernia-Sino’s main concerns are
-                                    the
-                                    following:</p>
-                                <p>• Security</p>
-                                <p>• Reliability</p>
-                                <p>• Ease of use for the customer and for employees of Hibernia-Sino</p>
-                                <p>• The ability for users and employees to interface with the new solution in English
-                                    or Chinese.</p>
-                                <p>For the First beta solution, our team is only required to deliver a system to handle
-                                    lost
-                                    luggage. Customers should be able to file lost luggage claims online, and employees
-                                    of
-                                    Hibernia-Sino should be able to process these claims online.
-                                    We can email questions to the team in Hibernia but only one email per week from each
-                                    team can be processed. The email address is hibernia-sino@hotmail.com.
-                                    We have 12 weeks to implement a solution. In week 13 we will provide a written
-                                    report
-                                    documenting the software you have implemented to Hibernia-Sino. In weeks 14 and 15
-                                    we will demonstrate our prototype to Hibernia-Sino. </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="small-12 column">
-
-                        </div>
-                    </div>
-
-            </article>
-        </div>
-
-        <div class="zone zone-footer">
-            <article class="widget-footer widget-kosmos-nav-widget widget">
-
-
-                <footer class="Footer">
-                    <div class="Footer-nav Pattern Pattern--monoDark">
-                        <div class="flexrow row">
-                            <div class="col-sm-12 col-md-3 col-lg-6 columns small-12 medium-3 large-6">
-                                <a class="partners-footer-logo Footer-logo" href="/"> <span
-                                        class="Footer-logo-img"></span> <span class="Footer-logo-fallback"></span> </a>
-                            </div>
-                            <div class="col-sm-12 col-md-3 col-lg-2 columns small-12 medium-3 large-2">
-                                <ul class="Footer-menu">
-                                    <li class="Footer-menuItemTitle">About us</li>
-                                    <li class="Footer-menuItem"><a class="Footer-menuItemLink"
-                                                                   href="/partnerpublic/partner-program">What is the
-                                        partner program</a></li>
-                                    <li class="Footer-menuItem"><a class="Footer-menuItemLink"
-                                                                   href="/partnerpublic/about">About World Nomads</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-12 col-md-3 col-lg-2 columns small-12 medium-3 large-2">
-                                <ul class="Footer-menu">
-                                    <li class="Footer-menuItemTitle">Performance</li>
-                                    <li class="Footer-menuItem"><a class="Footer-menuItemLink"
-                                                                   href="/partnerpublic/success-stories">Success
-                                        Stories</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-12 col-md-3 col-lg-2 columns small-12 medium-3 large-2">
-                                <ul class="Footer-menu Footer-assistance">
-                                    <li class="Footer-menuItemTitle">Need Help?</li>
-                                    <li class="Footer-menuItem"><a class="Footer-menuItemLink"
-                                                                   href="/partnerpublic/content-guidelines">Content
-                                        Guidelines</a></li>
-                                    <li class="Footer-menuItem"><a class="Footer-menuItemLink"
-                                                                   href="/partnerpublic/affiliate-agreement">Terms &amp;
-                                        Conditions</a></li>
-                                    <li class="Footer-menuItem"><a class="Footer-menuItemLink"
-                                                                   href="/partnerpublic/faq">FAQs</a></li>
-                                    <li class="Footer-menuItem"><a class="Footer-menuItemLink"
-                                                                   href="/partnerpublic/contact">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="flexrow row">
-                            <div class="col-sm-12 col-md-6 Footer-spacer columns small-12 medium-6">
-                            </div>
-                            <div class="col-sm-12 col-md-6 Footer-spacer columns small-12 medium-6">
-                                <ul class="Footer-social">
-                                    <li class="Footer-socialTitle">Follow us on</li>
-                                    <li class="Footer-socialIcon">
-                                        <a class="icon-wn-twitter Icon--sml Icon--circle Icon--reverse"
-                                           href="https://twitter.com/worldnomads"></a>
-                                    </li>
-                                    <li class="Footer-socialIcon">
-                                        <a class="icon-wn-facebook Icon--sml Icon--circle Icon--reverse"
-                                           href="https://www.facebook.com/worldnomads"></a>
-                                    </li>
-                                    <li class="Footer-socialIcon">
-                                        <a class="icon-wn-youtube Icon--sml Icon--circle Icon--reverse"
-                                           href="http://www.youtube.com/user/WorldNomadsTV"></a>
-                                    </li>
-                                    <li class="Footer-socialIcon">
-                                        <a class="icon-wn-instagram Icon--sml Icon--circle Icon--reverse"
-                                           href="http://instagram.com/worldnomads/"></a>
-                                    </li>
-                                    <li class="Footer-socialIcon">
-                                        <a class="icon-wn-pinterest-p Icon--sml Icon--circle Icon--reverse"
-                                           href="http://www.pinterest.com/worldnomads/"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Footer-disclaimer flexrow row">
-                        <div class="col-sm-12 columns small-12">
-                            <small class="Footer-disclaimerCopy"> All of the information we provide about travel
-                                insurance is a brief summary only. It does not include all terms, conditions,
-                                limitations, exclusions and termination provisions of the travel insurance plans
-                                described. Coverage may not be available for residents of all countries, states or
-                                provinces. Please carefully read your policy wording for a full description of coverage.
-                                <br>
-                                <br>
-                                WorldNomads.com Pty Limited (ABN 62 127 485 198 AR 343027) at Governor Macquarie Tower,
-                                Level 18, 1 Farrer Place, Sydney, NSW, 2000, Australia is an Authorised Representative
-                                of Cerberus Special Risks Pty Limited (ABN 81 115 932 173 AFSL 308461) and is
-                                underwritten by certain underwriters at Lloyd's. WorldNomads.com Pty Limited markets and
-                                distributes insurance products of Bupa Denmark, filial af Bupa Insurance Limited,
-                                England, Palaegade 8, DK 1261 Copenhagen K, Denmark, CVR 31602742, which is authorised
-                                by the Prudential Regulation Authority (UK) and subject to limited regulation by the
-                                Danish Financial Services Authority Finanstilsynet (DK). World Nomads Travel Lifestyle
-                                (Europe) Limited (Company No 601852) markets and promotes travel insurance products of
-                                Nomadic Insurance Benefits Limited (Company No 601851), First Floor, City Quarter, Lapps
-                                Quay, Cork, Ireland. Nomadic Insurance Benefits Limited is regulated by the Central Bank
-                                of Ireland. World Nomads Limited (05443592) is an Appointed Representative of Millstream
-                                Underwriting Limited (FCA Firm ref: 308584) at 52-56 Leadenhall Street, London, EC3A
-                                2DX, United Kingdom. World Nomads Inc. (1585422), at 520 3rd Street, Suite 201, Oakland,
-                                CA 94607, plans are administered by Trip Mate Inc. (in CA &amp; UT, dba, Trip Mate
-                                Insurance Agency) at 9225 Ward Parkway, Suite 200, Kansas City, MO, 64114, USA, with
-                                24-hour and Assistance Services provided by One Call Worldwide Travel Services Network,
-                                Inc. and plans underwritten by Nationwide Mutual Insurance Company and affiliated
-                                companies, Columbus, OH. World Nomads (Canada) Ltd (BC: 0700178; Business No: 001 85379
-                                7942 RC0001) is a licensed agent sponsored by AIG Insurance Company of Canada at 120
-                                Bremner Boulevard, Suite 2200, Toronto, Ontario, M5J 0A8, Canada. World Experiences
-                                Seguros De Viagem Brasil Ltda (CNPJ: 21.346.969/0001-99) at Rua Padre Jo?o Manuel, 755,
-                                16o andar, S?o Paulo �C SP, Brazil is an Authorized Partner (Representante) of Zurich
-                                Minas Brasil Seguros S.A. (CNPJ: 17.197.385/0001-21) at Av. Get��lio Vargas, 1420, 5th
-                                floor, Funcion��rios, Belo Horizonte, State of Minas Gerais through the SUSEP Process
-                                15414.901107/2015-77. All World Nomads entities listed above, including Nomadic
-                                Insurance Benefits Limited, are subsidiaries of nib holdings limited (ABN 51 125 633
-                                856).
-                            </small>
-                        </div>
-                    </div>
-                </footer>
-
-                <!-- Overriding legacy footer pattern -->
-                <style>
-                    footer .footer-background {
-                        background: #2a2b29;
-                    }
-
-                    body.purchase-path .header-panel, body.purchase-path.quote .header-panel {
-                        background: #094f90;
-                    }
-                </style>
-
-            </article>
+<!-- Picture -->
+<div class="container">
+    <div class="jumbotron p-4 p-md-5 text-white rounded"
+         style='background-image: url(/static/img/index/index/about/image1.jpg)'>
+        <div class="col-md-6 px-0">
+            <br/>
+            <h1 class="display-4 font-italic">About Hibernia Sino Travel</h1><br/>
+            <p class="lead my-3"> Here’s an introduction to our team and what we do.</p>
         </div>
     </div>
-</div>
+    <!-- Picture End-->
+
+    <div class="row">
+        <!-- Main -->
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+                Catalogue
+            </h3>
+            <h5 class="pb-4 mb-4 font-italic border-bottom">
+                <ul class="NavList-menu" data-smoothscroll>
+                    <li>
+                        <a href="#1">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#2">Team member</a>
+                    </li>
+                    <li>
+                        <a href="#3">Task Statement</a>
+                    </li>
+                </ul>
+            </h5>
+
+            <!-- post -->
+            <div class="blog-post">
+                <h3 class="blog-post-title"id="1" >Introduction</h3>
+                <p class="blog-post-meta">May 1, 2019 by G12-BOOM</p>
+
+                <p>There is the introduction.</p>
+                <hr>
+                <h2 id="2">Team members</h2>
+                <p>
+                <li>16206527 Ziqin Wu</li>
+                <li>16206952 Zezhi Wang</li>
+                <li>16206469 Zhaorui Wang</li>
+                <li>16206777 Xihao Wang</li>
+                <li>16206534 Dongxue Xia</li>
+                </p>
+                <hr>
+                <h3 id ="3">Task Statement</h3>
+                <p>Our software engineering team has been hired to meet the needs of a client, the
+                    Hibernia-Sino Travel Insurance Company. Hibernia-Sino is a travel insurance
+                    company
+                    who specializes in travel between Ireland and China. They are moving their
+                    workflow
+                    processes from dated desktop software systems to the cloud. This will allow
+                    customers to
+                    update their details, renew their policies, and register claims online. The
+                    solution must be
+                    cloud-based, and work on mobile as well as PCs. Hibernia-Sino’s main concerns
+                    are the
+                    following:</p>
+                <p>• Security</p>
+                <p>• Reliability</p>
+                <p>• Ease of use for the customer and for employees of Hibernia-Sino</p>
+                <p>• The ability for users and employees to interface with the new solution in
+                    English or Chinese.</p>
+                <p>For the First beta solution, our team is only required to deliver a system to
+                    handle lost
+                    luggage. Customers should be able to file lost luggage claims online, and
+                    employees of
+                    Hibernia-Sino should be able to process these claims online.
+                    We can email questions to the team in Hibernia but only one email per week from
+                    each
+                    team can be processed. The email address is hibernia-sino@hotmail.com.
+                    We have 12 weeks to implement a solution. In week 13 we will provide a written
+                    report
+                    documenting the software you have implemented to Hibernia-Sino. In weeks 14 and
+                    15
+                    we will demonstrate our prototype to Hibernia-Sino. </p>
+
+            </div><!-- /post -->
+        </div><!-- /main -->
+    </div>
+</div><!-- /.container -->
 
 
-<!--[if lt IE 9]>
-<script type="text/javascript" src="/Themes/Partners/Scripts/js-main-ie8.min.js"></script> <![endif]-->
-<!--[if (gte IE 9) | (!IE)]><!-->
-<script data-cfasync="false" src="js2.js"></script>
-<script type="text/javascript" src="js3.js"></script>
-<script type="text/javascript">
-    svg4everybody();
-    $(document).foundation();
-    $(function () {
-        $("html").removeClass("hidden");
-    });
-</script>
-<!--<![endif]-->
+<!-- Optional JavaScript -->
+
+<!-- jQuery -->
+<script src="/static/js/common/jquery-3.4.1.min.js"></script>
+<!--Popper.js-->
+<script src="/static/js/common/popper.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="/static/js/common/bootstrap.min.js"></script>
 </body>
 </html>
+

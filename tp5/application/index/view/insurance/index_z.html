@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/static/css/purchase.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Hibernia-Sino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{:url('index/index/index')}">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/about')}">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/contact')}">联系我们</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- multiple languages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        语言
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{:url('index/insurance/changeLanguage',['lang'=> 1])}">English</a>
+                        <a class="dropdown-item" href="{:url('index/insurance/changeLanguage',['lang'=> 2])}">简体中文</a>
+                    </div>
+                </li>
+                <!-- multiple languages End-->
+
+                <!-- SignIn and logOut -->
+                {eq name="isLogin" value="true"}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                        登出</a>
+                </li>
+                {else/}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                        登入 / 注册</a>
+                </li>
+                {/eq}
+                <!-- SignIn and logOut End -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Navbar End -->
+
+<br>
+<div class="container">
+    <div class="jumbotron p-4 p-md-5 text-white rounded  "
+         style='background-image: url(/static/img/1.jpg);background-size: cover'>
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">保险<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;订购</h1>
+            <p class="lead my-3">我们时刻准备着为您服务，无论你身在何处，我们一直保护您财产的安全。
+            </p>
+            <p class="lead mb-0"><a href="#1" class="text-white font-weight-bold">继&nbsp;续...</a></p>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">黄金保险</strong>
+                    <h3 class="mb-0" id="1">黄金保险</h3>
+                    <!--<div class="mb-1 text-muted">Nov 12</div>-->
+                    <p class="card-text mb-auto">
+                        主要适用于小件行李和随身行李的损失
+                        物品 (重量 5Kg, 体积不超过 20x40x55 厘米)<br>
+<!--                        The free air accident insurance of-->
+<!--                        100 thousand yuan is sent, get namely take effect immediately, enjoy exceed value safeguard-->
+<!--                        between the snap of a finger!-->
+                    </p>
+                    <a href="{:url('index/insurance/payFor',['insuranceId'=>1])}"
+                       class="stretched-link">现在购买</a>
+                </div>
+                <div class="col-auto d-none d-lg-block"
+                     style='background-image: url(/static/img/2.jpg);background-size: cover'>
+                    <svg class="bd-placeholder-img" src="" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                         aria-label="Placeholder: Thumbnail"></svg>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">黄金保险</strong>
+                    <h3 class="mb-0">黄金保险</h3>
+                    <!--<div class="mb-1 text-muted">Nov 12</div>-->
+                    <p class="card-text mb-auto">
+                        <!--                        mainly applies to the loss of small pieces of luggage and carry-on-->
+                        <!--                        items (weight 5Kg, volume not more than 20 40 55cm)<br> -->
+                        10万元免费空难保险, 立即生效, 享受超越价值与保障之间的绝妙体验，动动手指立即抢购!<p>
+                    <a href="{:url('index/insurance/payFor',['insuranceId'=>1])}"
+                       class="stretched-link">现在购买</a>
+                </div>
+                <div class="col-auto d-none d-lg-block"
+                     style='background-image: url(/static/img/3.jpg);background-size: cover'>
+                    <svg class="bd-placeholder-img" src="" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                         aria-label="Placeholder: Thumbnail"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">极速保险</strong>
+                    <h3 class="mb-0">极速保险</h3>
+                    <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                    <p class="mb-auto">
+                        主要用于自理处理行李丢失
+                        (重量 10Kg, 体积不超过 20 x40 x55 厘米)<br>
+<!--                        For the people who travel by plane within 48 hours, 9.88 yuan will enjoy the aviation accident protection of 5 million yuan. Fly with-->
+<!--                        buy, economic and practical, effective immediately-->
+                    </p>
+                    <a href="{:url('index/insurance/payFor',['insuranceId'=>2])}"
+                       class="stretched-link">现在购买</a>
+                </div>
+                <div class="col-auto d-none d-lg-block"
+                     style='background-image: url(/static/img/4.jpg);background-size: cover'>
+                    <svg class="bd-placeholder-img" src="" width="200" height="250"
+                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                         role="img" aria-label="Placeholder: Thumbnail"></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">极速保险</strong>
+                    <h3 class="mb-0">极速保险</h3>
+                    <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                    <p class="mb-auto">
+<!--                        It is mainly used for the loss of self-care luggage-->
+<!--                        (weight 10Kg, volume no more than 20 40 55cm)<br> -->
+                        飞机旅行保险，48小时内, 9.88 元将享受500万元的航空事故保护. 立即生效。
+                    </p>
+                    <a href="{:url('index/insurance/payFor',['insuranceId'=>2])}"
+                       class="stretched-link">现在购买</a>
+                </div>
+                <div class="col-auto d-none d-lg-block"
+                     style='background-image: url(/static/img/5.jpg);background-size: cover'>
+                    <svg class="bd-placeholder-img" src="" width="200" height="250"
+                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                         role="img" aria-label="Placeholder: Thumbnail"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-warning">Premium</strong>
+                    <h3 class="mb-0">Premium insurance</h3>
+                    <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                    <p class="mb-auto">
+                        主要适用于大型行李和托运物品的损失
+                        (重量 50Kg, 体积不能超过 40x60x100 厘米)
+<!--                        <br> As long as 98 yuan, you can enjoy one-->
+<!--                        year, the amount of insurance up to 5 million unlimited air accident protection, each trip-->
+<!--                        without any prior registration procedures"-->
+                    </p>
+                    <a href="{:url('index/insurance/payFor',['insuranceId'=>3])}"
+                       class="stretched-link">现在购买</a>
+                </div>
+                <div class="col-auto d-none d-lg-block"
+                     style='background-image: url(/static/img/6.jpg);background-size: cover'>
+                    <svg class="bd-placeholder-img" src="" width="200" height="250"
+                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                         role="img" aria-label="Placeholder: Thumbnail"></svg>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-warning">白金保险</strong>
+                    <h3 class="mb-0">白金保险</h3>
+                    <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                    <p class="mb-auto">
+<!--                        it is mainly applicable to the loss of large luggage and checked items-->
+<!--                        (weight 50Kg, volume cannot exceed 40 60100cm)<br>-->
+                        只要98元, 你就能享受到一年保护, 保险金额高达500万无限次空难保护, 每次行程
+                        无需任何额外操作 "</p>
+                    <a href="{:url('index/insurance/payFor',['insuranceId'=>3])}"
+                       class="stretched-link">现在购买</a>
+                </div>
+                <div class="col-auto d-none d-lg-block"
+                     style='background-image: url(/static/img/7.jpg);background-size: cover'>
+                    <svg class="bd-placeholder-img" src="" width="200" height="250"
+                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                         role="img" aria-label="Placeholder: Thumbnail"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="/static/dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="/static/assets/js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/static/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

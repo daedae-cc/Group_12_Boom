@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/static/css/index/index/about/about.css" rel="stylesheet">
+    <link href="/static/css/index/index/about/about2.css" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body>
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Hibernia-Sino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{:url('index/index/index')}">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/about')}">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/contact')}">联系我们</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- multiple languages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        语言
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguageA',['lang'=> 1])}">English</a>
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguageA',['lang'=> 2])}">简体中文</a>
+                    </div>
+                </li>
+                <!-- multiple languages End-->
+
+                <!-- SignIn and logOut -->
+                {eq name="isLogin" value="true"}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                        登出</a>
+                </li>
+                {else/}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                        登入 / 注册</a>
+                </li>
+                {/eq}
+                <!-- SignIn and logOut End -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Navbar End-->
+
+<!-- Picture -->
+<div class="container">
+    <div class="jumbotron p-4 p-md-5 text-white rounded"
+         style='background-image: url(/static/img/index/index/about/image1.jpg)'>
+        <div class="col-md-6 px-0">
+            <br/>
+            <h1 class="display-4 font-italic">关于 Hibernia Sino</h1><br/>
+            <p class="lead my-3">介绍我们的团队，以及我们将要做什么。</p>
+        </div>
+    </div>
+    <!-- Picture End-->
+
+    <div class="row">
+        <!-- Main -->
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+                目录
+            </h3>
+            <h5 class="pb-4 mb-4 font-italic border-bottom">
+                <ul class="NavList-menu" data-smoothscroll>
+                    <li>
+                        <a href="#1">介绍</a>
+                    </li>
+                    <li>
+                        <a href="#2">小组成员</a>
+                    </li>
+                    <li>
+                        <a href="#3">我们的任务</a>
+                    </li>
+                </ul>
+            </h5>
+
+            <!-- post -->
+            <div class="blog-post">
+                <h3 class="blog-post-title" id = '1'>介绍</h3>
+                <p class="blog-post-meta">五月 1, 2019 来自 G12-BOOM</p>
+
+                <p>我们是小组 G12-BOOM 我们完成这个优秀的网站，它的安全性，稳定性，扩展性都得到了良好的实现</p>
+                <hr>
+                <h2 id ="2"> 小组成员</h2>
+                <p>
+                <li>16206527 吴子钦</li>
+                <li>16206952 王泽志</li>
+                <li>16206469 王兆瑞</li>
+                <li>16206777 王希豪</li>
+                <li>16206534 夏冬雪</li>
+                </p>
+                <hr>
+                <h3 id="3">我们的任务</h3>
+                <p>我们的软件工程团队被雇用来满足客户的需求,
+                    Hibernia-Sino Travel 保险公司。Hibernia-sino 是旅游保险公司
+                    他专门研究爱尔兰和中国之间的旅行。他们正在移植他们的工作流程
+                    从过时的桌面软件系统到云的过程。这将可以做到：
+                    1. 客户可以更新他们的个人信息信息。
+                    2. 更新他们的政策。
+                    3. 并在线注册索赔。
+                    解决方案必须是基于云的, 并在移动和 Pc 上工作。
+                    更多要求如下：</p>
+                <p>• 安全性</p>
+                <p>• 可靠性</p>
+                <p>• 对于 Hibernia-Sino 的客户和员工来说, 易于使用</p>
+                <p>• 多语言界面</p>
+                <p>对于第一个测试版解决方案, 我们的团队只需将系统提供解决丢失
+                    行李。客户应该能够在网上提交丢失的行李索赔,
+                    并且员工的应该能够在网上处理这些索赔。
+                    我们可以通过电子邮件发送问题给在 Hibernia 的团队, 但每周只有一封电子邮件从
+                    每个团队可以被处理。电子邮件地址是 hibernia-sino@hotmail.com。
+                    我们有12周的时间来实施解决方案。在第13周, 我们将提供一份书面
+                    报告 记录您已实现给 Hibernia-sino 的软件。在第14周和15周
+                    我们将向 Hibernia-sino 展示我们的原型 </p>
+            </div><!-- /post -->
+        </div><!-- /main -->
+    </div>
+</div><!-- /.container -->
+
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery -->
+<script src="/static/js/common/jquery-3.4.1.min.js"></script>
+<!--Popper.js-->
+<script src="/static/js/common/popper.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="/static/js/common/bootstrap.min.js"></script>
+</body>
+</html>
+

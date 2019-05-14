@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>temp loss detail</title>
+</head>
+<body>
+{$loss}
+
+
+<br/>
+
+{if $loss->getData("status")== 0}this is 0
+<a href="{:url('employee/work/addProcessLoss', ['id' => $loss->getData('id')])}">add it to process</a>
+<a href="{:url('employee/work/processLoss',['id' => $loss->getData('id')])}">Start deal it</a>
+{elseif $loss->getData("status")== 1/}
+<form class="cont_form_sign_up" action="{:url('employee/work/finishLoss',['id' => $loss->getData('id')])}" method="post">
+    <input type="number" name="pay">
+    <button class="btn_sign_up" type="submit">pay</button>
+</form>
+{else /}
+{/if}
+
+
+</body>
+</html>
+

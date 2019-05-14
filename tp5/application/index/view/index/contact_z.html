@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/static/css/index/index/contact/contact.css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+
+<body>
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Hibernia-Sino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{:url('index/index/index')}">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/about')}">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/contact')}">联系我们</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- multiple languages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        语言
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguageC',['lang'=> 1])}">English</a>
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguageC',['lang'=> 2])}">简体中文</a>
+                    </div>
+                </li>
+                <!-- multiple languages End-->
+
+                <!-- SignIn and logOut -->
+                {eq name="isLogin" value="true"}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                        登出</a>
+                </li>
+                {else/}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                        登入 / 注册</a>
+                </li>
+                {/eq}
+                <!-- SignIn and logOut End -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Navbar End-->
+
+<!-- Picture -->
+<div class="container">
+    <div class="jumbotron p-4 p-md-5 text-white rounded "
+         style='background-image: url(/static/img/index/index/contact/image2.png) ; background-size: cover ;
+          background-repeat: no-repeat;'>
+        <div class="col-md-6 px-0">
+            <br/>
+            <h1 class="display-4 font-italic">联系我们</h1><br/>
+            <p class="lead my-3">如果您有任何的问题随时呼叫我们！</p>
+        </div>
+    </div>
+    <!-- Picture End-->
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-3">
+            <fieldset>
+                <legend>手机</legend>
+                <img src="/static/img/index/index/contact/phone1.png" width="145" height="145">
+                <hr class="mb-4">
+                <h3>都柏林：</h3>
+                <span>003531-888888</span>
+                <hr class="mb-4">
+                <br>
+                <h3>国际电话：</h3>
+                <span>400-888888</span>
+            </fieldset>
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+            <fieldset>
+                <legend>邮箱：</legend>
+                <img src="/static/img/index/index/contact/email1.png" width="150" height="150">
+                <hr class="mb-4">
+                <a href="https://github.com/">hibernia-sina@hotmail.com</a>
+            </fieldset>
+        </div>
+    </div>
+</div><!-- /.container -->
+
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery -->
+<script src="/static/js/common/jquery-3.4.1.min.js"></script>
+<!--Popper.js-->
+<script src="/static/js/common/popper.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="/static/js/common/bootstrap.min.js"></script>
+</body>
+</html>
+

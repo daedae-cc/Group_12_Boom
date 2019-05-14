@@ -25,6 +25,7 @@ class SignUpController extends Controller
 
     public function signUp(){
         $postData = Request::instance()->post();
+
         if(User::exist($postData["username"])){
             return $this->error('username exist', url('index/signIn/index'));
         }
@@ -50,6 +51,7 @@ class SignUpController extends Controller
     }
 
     public function emailVerification(){
+
         return  $this ->fetch();
     }
 

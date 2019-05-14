@@ -43,8 +43,10 @@ class User extends Model
     {
         $user = User::get(['username' => $username]);
         if (!is_null($user)) {
+            //exist
             return true;
         } else {
+            //not exist
             return false;
         }
     }
@@ -103,6 +105,7 @@ class User extends Model
         }
     }
 
+
     /**
      * 注销
      * @return bool  成功true，失败false。
@@ -113,6 +116,12 @@ class User extends Model
         // 销毁session中数据
         session('userId', null);
         return true;
+    }
+
+    static public function setLanguage($lang = 1)
+    {
+        session('language', $lang);
+       return $lang;
     }
 
 }

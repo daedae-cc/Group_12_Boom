@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon.ico">
+
+    <title>保险</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/static/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="/static/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+
+    <link href="/static/css/purchase.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Hibernia-Sino</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{:url('index/index/index')}">首页</a></li>
+                        <li><a href={:url('index/index/about')}>关于</a></li>
+                        <li><a href="{:url('index/index/contact')}">联系</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">下拉 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">行为</a></li>
+                                <li><a href="#">其他行为</a></li>
+                                <li><a href="#">其他事务</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">导航页眉</li>
+                                <li><a href="#">分离链接</a></li>
+                                <li><a href="#">另一个分离链接</a></li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {eq name="isLogin" value="true"}
+                        <li><a href="{:url('index/signIn/logOut')}"><span
+                                class="glyphicon glyphicon-log-in"></span>
+                            退出</a></li>
+                        {else/}
+                        <li><a href="{:url('index/signIn/index')}"><span
+                                class="glyphicon glyphicon-log-in"></span>
+                            注册/登陆</a></li>
+                        {/eq}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Primary</strong>
+                        <h3 class="mb-0">初级保险</h3>
+                        <!--<div class="mb-1 text-muted">Nov 12</div>-->
+                        <p class="card-text mb-auto">主要适用于小件行李及随身物品(重量≤5Kg, 体积不超过20×40×55cm)的丢失<br> 10万元保额的航意险免费送，即领即生效，弹指间享受超值保障</p>
+                        <a href="{:url('index/insurance/payFor',['insuranceId'=>1])}"
+                           class="stretched-link">购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Intermediate</strong>
+                        <h3 class="mb-0">中级保险</h3>
+                        <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                        <p class="mb-auto">主要适用于自理行李(重量≤10Kg,体积不超过20×40×55cm)的丢失<br> 面向48小时内搭乘飞机出行的人群，9.88元即享受500万元的航空意外保障。随飞随买，经济实用，即刻生效</p>
+                        <a href="{:url('index/insurance/payFor',['insuranceId'=>2])}"
+                           class="stretched-link">购买</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">Premium</strong>
+                        <h3 class="mb-0">高级保险</h3>
+                        <!--<div class="mb-1 text-muted">Nov 11</div>-->
+                        <p class="mb-auto"> 主要适用于大件行李及托运物品(重量≤50Kg, 体积不能超过40×60×100cm)的丢失
+<br> 只要98元，即可享受一年期，保额高达500万的无限次航空意外保障，每次出行前无需任何报备手续。</p>
+                        <a href="{:url('index/insurance/payFor',['insuranceId'=>3])}"
+                           class="stretched-link">购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/static/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/static/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

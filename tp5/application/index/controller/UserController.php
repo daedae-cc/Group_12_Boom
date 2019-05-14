@@ -18,18 +18,23 @@ class UserController extends IsSignInController
 {
     public function index()
     {
-        return $this->fetch();
-    }
-
-    public function profile()
-    {
+        $isLogin = User::isLogin();
+        //send information
+        $this->assign("isLogin", $isLogin);
         $user = User::findUser();
         $this->assign('user', $user);
-        return $this->fetch();
+        if (session("language") == 1) {
+            return $this->fetch();
+        } else {
+            return $this->fetch('index_z');
+        }
     }
 
     public function edit()
     {
+        $isLogin = User::isLogin();
+        //send information
+        $this->assign("isLogin", $isLogin);
 
         $user = User::findUser();
         // 将数据传给V层
@@ -38,14 +43,31 @@ class UserController extends IsSignInController
         // 获取封装好的V层内容
 
         // 将封装好的V层内容返回给用户
-        return $this->fetch();
+        if (session("language") == 1) {
+            return $this->fetch();
+        } else {
+            return $this->fetch('edit_z');
+        }
     }
 
     public function update()
     {
         $postData = Request::instance()->post();
         User::updateUser($postData);
-        return $this->redirect("index/user/profile");
+        return $this->redirect("index/user/index");
 //        return var_dump(User::updateUser($postData));
     }
+
+    public function changeLanguage($lang = 1)
+    {
+        User::setLanguage($lang);
+        $this->redirect("index/user/index");
+    }
+
+    public function changeLanguageE($lang = 1)
+    {
+        User::setLanguage($lang);
+        $this->redirect("index/user/edit");
+    }
+
 }

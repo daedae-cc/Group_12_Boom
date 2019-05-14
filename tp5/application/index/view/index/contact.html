@@ -1,62 +1,120 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)https://getbootstrap.com/docs/4.3/examples/checkout/ -->
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <!-- meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Our contact details</title>
-
-    <style>
-        fieldset {
-            padding: .35em .625em .75em;
-            margin: 0 2px;
-            border: 1px solid silver;
-        }
-
-        legend {
-            padding: .5em;
-            border: 0;
-            width: auto;
-        }
-    </style>
-    <link href="./Checkout example · Bootstrap_files/form-validation.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/static/css/index/index/contact/contact.css" rel="stylesheet">
+    <title>Contact Us</title>
 </head>
+
+
 <body>
-<form>
-    <h2>Contact details</h2>
-    <br>
-    <p>We are here to help if you have a question about your claim.We are available:</p>
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Hibernia-Sino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{:url('index/index/index')}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/about')}">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index/contact')}">CONTACT</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- multiple languages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        LANGUAGE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguage',['lang'=> 1])}">English</a>
+                        <a class="dropdown-item" href="{:url('index/index/changeLanguage',['lang'=> 2])}">简体中文</a>
+                    </div>
+                </li>
+                <!-- multiple languages End-->
+
+                <!-- SignIn and logOut -->
+                {eq name="isLogin" value="true"}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/logOut')}">
+                        LOGOUT</a>
+                </li>
+                {else/}
+                <li class="nav-item">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="{:url('index/signIn/index')}">
+                        SIGN IN/SIGN UP</a>
+                </li>
+                {/eq}
+                <!-- SignIn and logOut End -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Navbar End-->
+
+<!-- Picture -->
+<div class="container">
+    <div class="jumbotron p-4 p-md-5 text-white rounded "
+         style='background-image: url(/static/img/index/index/contact/image2.png) ; background-size: cover ;
+          background-repeat: no-repeat;'>
+        <div class="col-md-6 px-0">
+            <br/>
+            <h1 class="display-4 font-italic">Contact details</h1><br/>
+            <p class="lead my-3">We are here to help if you have a question about your claim.We are available:</p>
+        </div>
+    </div>
+    <!-- Picture End-->
 
     <div class="row">
-        <fieldset>
-            <div class="col-md-5 mb-3">
+        <div class="col-xs-6 col-sm-3">
+            <fieldset>
                 <legend>Phone</legend>
-                <img src="phone1.png" width="145" height="145">
+                <img src="/static/img/index/index/contact/phone1.png" width="145" height="145">
                 <hr class="mb-4">
-                <h5>Within Canada & Continental</h5>
-                <span>numbers</span>
+                <h3>Within Dublin</h3>
+                <span>003531-888888</span>
                 <hr class="mb-4">
                 <br>
-                <h5>International collect</h5>
-                <span>numbers</span>
-            </div>
-        </fieldset>
+                <h3>International collect</h3>
+                <span>400-888888</span>
+            </fieldset>
+        </div>
 
-        <div class="col-md-5 mb-3">
+        <div class="col-xs-6 col-sm-3">
             <fieldset>
                 <legend>Email</legend>
-                <img src="email1.png" width="150" height="150">
+                <img src="/static/img/index/index/contact/email1.png" width="150" height="150">
                 <hr class="mb-4">
-                <a href="https://github.com/">https://github.com/</a>
+                <a href="https://github.com/">hibernia-sina@hotmail.com</a>
             </fieldset>
         </div>
     </div>
-</form>
+</div><!-- /.container -->
+
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery -->
+<script src="/static/js/common/jquery-3.4.1.min.js"></script>
+<!--Popper.js-->
+<script src="/static/js/common/popper.min.js"></script>
+<!-- Bootstrap core JS -->
+<script src="/static/js/common/bootstrap.min.js"></script>
 </body>
+</html>
+

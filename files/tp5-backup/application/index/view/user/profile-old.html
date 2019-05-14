@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>gender</th>
+        <th>email</th>
+        <th>first name</th>
+        <th>last name</th>
+        <th>VIP</th>
+    </tr>
+
+    <tr>
+        <td>{$user->getData('id')}</td>
+        <td>{$user->getData('username')}</td>
+        <td>{$user->getData('gender')}</td>
+        <td>{$user->getData('email')}</td>
+        <td>{$user->getData('firstname')}</td>
+        <td>{$user->getData('lastname')}</td>
+        <td>{$user->getData('vip')}</td>
+    </tr>
+
+    <tr>
+        <td>
+        <a href="{:url('index/user/edit')}">编辑</a>
+        </td>
+        <td>
+        <a href="{:url('index/index/index')}">home page</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
